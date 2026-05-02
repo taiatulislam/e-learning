@@ -200,6 +200,7 @@ export default function HeroSection() {
                 src={ctaStudentImg}
                 alt="Student ready to learn"
                 className="w-64 md:w-80 lg:w-120 object-contain drop-shadow-xl"
+                priority
               />
             </div>
           </section>
