@@ -1,18 +1,10 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Search, ArrowUpRight, Star, GraduationCap } from "lucide-react";
+import { Search, Star, GraduationCap } from "lucide-react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import ctaStudentImg from "@/public/assets/hero-student.png";
-
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Courses", href: "/courses" },
-  { label: "Instructors", href: "/instructors" },
-  { label: "About Us", href: "/about-us" },
-  { label: "Contact", href: "/contact" },
-];
+import Navbar from "./Navbar";
 
 const avatars = [
   "https://i.pravatar.cc/50?img=52",
@@ -80,39 +72,13 @@ export default function HeroSection() {
   return (
     <section className="hero-gradient min-h-screen overflow-hidden relative px-6">
       {/* Navbar */}
-      <motion.nav
+      <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="relative z-20 flex items-center justify-between py-5 max-w-7xl mx-auto"
       >
-        <div className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-full bg-star flex items-center justify-center">
-            <GraduationCap className="w-5 h-5 text-black" />
-          </div>
-          <span className="text-xl font-bold text-white tracking-tight">
-            E-Learning
-          </span>
-        </div>
-
-        <ul className="hidden md:flex items-center gap-7">
-          {navLinks.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.href}
-                className="text-sm font-medium text-white/90 hover:text-white transition-colors"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <Button variant="pill">
-          Registration
-          <ArrowUpRight className="w-7 h-7 icon-gradient rounded-full text-white p-1" />
-        </Button>
-      </motion.nav>
+        <Navbar from="home" />
+      </motion.div>
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-4 pt-14 pb-0">
