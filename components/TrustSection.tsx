@@ -49,7 +49,7 @@ const FeatureCard = ({
 }) => (
   <motion.div {...anim(delay)} className="bg-secondary rounded-3xl p-6">
     <div className="w-12 h-12 rounded-2xl icon-gradient flex items-center justify-center mb-5">
-      <Icon className="w-6 h-6 text-primary" />
+      <Icon className="w-6 h-6 text-white" />
     </div>
     <h3 className="text-xl font-bold mb-2">{title}</h3>
     <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
@@ -104,11 +104,9 @@ export default function TrustSection() {
             <div className="p-6 pt-2">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-2xl icon-gradient flex items-center justify-center">
-                  <Globe className="w-6 h-6 text-primary" />
+                  <Globe className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold">
-                  {TRUST_FEATURES[0].title}
-                </h3>
+                <h3 className="text-xl font-bold">{TRUST_FEATURES[0].title}</h3>
               </div>
               <p className="text-muted-foreground text-sm">
                 {TRUST_FEATURES[0].desc}

@@ -110,7 +110,7 @@ export default function HeroSection() {
 
         <Button variant="pill">
           Registration
-          <ArrowUpRight className="w-7 h-7 icon-gradient rounded-full text-primary p-1" />
+          <ArrowUpRight className="w-7 h-7 icon-gradient rounded-full text-white p-1" />
         </Button>
       </motion.nav>
 

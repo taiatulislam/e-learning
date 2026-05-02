@@ -85,7 +85,7 @@ export default function CourseCard({ course }: Props) {
               /lifetime
             </span>
           </div>
-          <button className="icon-gradient font-semibold text-xs px-3 py-1.5 rounded-full text-white bg-primary transition-all shadow-lg">
+          <button className="icon-gradient font-semibold text-xs px-3 py-1.5 rounded-full text-white transition-all shadow-lg">
             Enroll Now
           </button>
         </div>
