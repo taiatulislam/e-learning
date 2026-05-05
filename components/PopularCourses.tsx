@@ -25,6 +25,7 @@ const categories = [
 
 const courses: (Course & { category: string })[] = [
   {
+    id: "1",
     title: "Learn Figma from Basic",
     instructor: "purepearl studio",
     lessons: 17,
@@ -38,6 +39,7 @@ const courses: (Course & { category: string })[] = [
     image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400",
   },
   {
+    id: "2",
     title: "Web Development Bootcamp",
     instructor: "devhub",
     lessons: 28,
@@ -51,6 +53,7 @@ const courses: (Course & { category: string })[] = [
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400",
   },
   {
+    id: "3",
     title: "Digital Marketing Essentials",
     instructor: "market360",
     lessons: 18,
@@ -64,6 +67,7 @@ const courses: (Course & { category: string })[] = [
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
   },
   {
+    id: "4",
     title: "English for Daily Conversations",
     instructor: "languageflow",
     lessons: 15,
@@ -77,6 +81,7 @@ const courses: (Course & { category: string })[] = [
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400",
   },
   {
+    id: "5",
     title: "Digital Marketing Essentials",
     instructor: "market360",
     lessons: 18,
@@ -91,6 +96,7 @@ const courses: (Course & { category: string })[] = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=240&fit=crop",
   },
   {
+    id: "6",
     title: "English for Daily Conversations",
     instructor: "languageflow",
     lessons: 15,
@@ -105,6 +111,7 @@ const courses: (Course & { category: string })[] = [
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=240&fit=crop",
   },
   {
+    id: "7",
     title: "Business Strategy Masterclass",
     instructor: "bizcoach",
     lessons: 22,
