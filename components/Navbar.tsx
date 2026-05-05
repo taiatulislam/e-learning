@@ -2,6 +2,17 @@
 
 import { ArrowUpRight, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerTitle,
+  DrawerDescription,
+  DrawerTrigger,
+  DrawerClose,
+} from "@/components/ui/drawer";
+import Login from "./Login";
+import { IoMdClose } from "react-icons/io";
+import { cn } from "@/lib/utils";
 
 type NavLink = {
   label: string;
@@ -50,10 +61,44 @@ export default function Navbar({ from }: NavbarProps) {
           ))}
         </ul>
 
-        <Button variant="pill">
-          Registration
-          <ArrowUpRight className="w-7 h-7 icon-gradient rounded-full text-white p-1" />
-        </Button>
+        <Drawer direction="right">
+          <DrawerTrigger asChild>
+            <Button variant="pill">
+              Login
+              <ArrowUpRight className="w-7 h-7 icon-gradient rounded-full text-white p-1" />
+            </Button>
+          </DrawerTrigger>
+
+          <DrawerContent
+            className={cn(
+              "fixed inset-y-0 right-0 w-full bg-background shadow-xl",
+              "flex flex-col",
+            )}
+          >
+            <div className="flex items-center justify-between px-6 py-4 border-b">
+              <DrawerTitle className="uppercase text-[20px] font-bold text-primary">
+                Start Learn With <span>E-</span>
+                <span className="text-primary">Learning</span>
+              </DrawerTitle>
+
+              <DrawerDescription
+                className="text-sm text-muted-foreground"
+                className="sr-only"
+              >
+                Browse courses and start improving your skills today.
+              </DrawerDescription>
+
+              <DrawerClose className="text-gray-700 p-2 rounded-full hover:bg-gray-100 transition cursor-pointer">
+                <IoMdClose className="text-xl" />
+              </DrawerClose>
+            </div>
+
+            {/* Drawer Body */}
+            <div className="h-full">
+              <Login />
+            </div>
+          </DrawerContent>
+        </Drawer>
       </nav>
     </div>
   );

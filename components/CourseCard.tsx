@@ -31,6 +31,7 @@ export default function CourseCard({ course }: Props) {
           width={400}
           height={200}
           className="w-full h-full object-cover"
+          priority
         />
 
         {/* Rating */}
