@@ -41,7 +41,7 @@ const socialIcons = [SlSocialFacebook, SlSocialTwitter, SlSocialLinkedin];
 export default function Footer() {
   return (
     <footer style={{ background: "var(--color-footer-bg)" }}>
-      <div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
+      <div className="max-w-7xl mx-auto  px-6 pt-16 pb-10">
         {/* Top banner */}
         <motion.div
           {...anim(0)}

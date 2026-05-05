@@ -70,169 +70,177 @@ const SunBurstIcon = ({ className }: { className?: string }) => (
 
 export default function HeroSection() {
   return (
-    <section className="hero-gradient min-h-screen overflow-hidden relative px-6">
-      {/* Navbar */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      >
-        <Navbar from="home" />
-      </motion.div>
-
-      {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-4 pt-14 pb-0">
+    <section className="hero-gradient min-h-screen relative">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Navbar */}
         <motion.div
-          {...anim(0.1)}
-          className="flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full mb-8"
-        >
-          <GraduationCap className="w-4 h-4 text-accent" />
-          Learn From the Top Experts
-        </motion.div>
-
-        <motion.h1
-          {...anim(0.2)}
-          className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight"
-        >
-          Learn Anywhere, Anytime
-          <span className="block">Empower Your Future</span>
-        </motion.h1>
-
-        <motion.p
-          {...anim(0.35)}
-          className="text-muted text-base max-w-125 mt-5 leading-relaxed"
-        >
-          Join thousands of learners gaining new skills, advancing careers and
-          shaping a better tomorrow—one lesson at a time.
-        </motion.p>
-
-        <motion.div {...anim(0.5)} className="relative mt-8 w-full max-w-md">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-          <input
-            type="text"
-            placeholder="Search your Course..."
-            className="w-full pl-12 pr-6 py-2.5 rounded-full bg-white text-foreground placeholder:text-muted-foreground text-sm font-medium outline-none shadow-xl focus:ring-2 focus:ring-primary/30 transition"
-          />
-        </motion.div>
-      </div>
-
-      {/* Bottom Cards & Hero Image */}
-      <div className="relative z-10 px-6 mt-10 flex justify-center max-w-7xl mx-auto">
-        <motion.div
-          {...animScale(0.7)}
-          className="bg-white rounded-2xl p-5 w-52 shadow-2xl self-end mb-12 hidden md:block absolute left-0 bottom-0"
-        >
-          <p className="text-3xl font-bold text-foreground">4.8</p>
-          <div className="flex gap-0.5 mt-1">
-            {[1, 2, 3, 4].map((i) => (
-              <Star key={i} className="w-4 h-4 fill-current text-star" />
-            ))}
-            <Star className="w-4 h-4 fill-current/40 text-star" />
-          </div>
-          <p className="text-muted-foreground text-xs mt-2 leading-snug">
-            By students worldwide for quality learning and support.
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-6 shrink-0"
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
-          <section className="relative flex flex-col items-center">
-            {/* Concentric arc rings */}
-            <div className="absolute inset-0 flex items-end justify-center pointer-events-none">
-              {[730, 630, 500].map((size, i) => (
-                <div
+          <Navbar from="home" />
+        </motion.div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 flex flex-col items-center text-center px-4 pt-14 pb-0">
+          <motion.div
+            {...anim(0.1)}
+            className="flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-5 py-2 rounded-full mb-8"
+          >
+            <GraduationCap className="w-4 h-4 text-accent" />
+            Learn From the Top Experts
+          </motion.div>
+
+          <motion.h1
+            {...anim(0.2)}
+            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight"
+          >
+            Learn Anywhere, Anytime
+            <span className="block">Empower Your Future</span>
+          </motion.h1>
+
+          <motion.p
+            {...anim(0.35)}
+            className="text-muted text-base max-w-125 mt-5 leading-relaxed"
+          >
+            Join thousands of learners gaining new skills, advancing careers and
+            shaping a better tomorrow—one lesson at a time.
+          </motion.p>
+
+          <motion.div {...anim(0.5)} className="relative mt-8 w-full max-w-md">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+            <input
+              type="text"
+              placeholder="Search your Course..."
+              className="w-full pl-12 pr-6 py-2.5 rounded-full bg-white text-foreground placeholder:text-muted-foreground text-sm font-medium outline-none shadow-xl focus:ring-2 focus:ring-primary/30 transition"
+            />
+          </motion.div>
+        </div>
+
+        {/* Bottom Cards & Hero Image */}
+        <div className="relative z-10 px-6 mt-10 flex justify-center max-w-7xl mx-auto">
+          <motion.div
+            {...animScale(0.7)}
+            className="bg-white rounded-2xl p-5 w-52 shadow-2xl self-end mb-12 hidden md:block absolute left-0 bottom-0"
+          >
+            <p className="text-3xl font-bold text-foreground">4.8</p>
+            <div className="flex gap-0.5 mt-1">
+              {[1, 2, 3, 4].map((i) => (
+                <Star key={i} className="w-4 h-4 fill-current text-star" />
+              ))}
+              <Star className="w-4 h-4 fill-current/40 text-star" />
+            </div>
+            <p className="text-muted-foreground text-xs mt-2 leading-snug">
+              By students worldwide for quality learning and support.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="relative mx-6 shrink-0"
+          >
+            <section className="relative flex flex-col items-center">
+              {/* Concentric arc rings */}
+              <div className="absolute inset-0 flex items-end justify-center pointer-events-none">
+                {[730, 630, 500].map((size, i) => (
+                  <div
+                    key={i}
+                    className="absolute rounded-full border"
+                    style={{
+                      width: size,
+                      height: size,
+                      bottom: -size / 2,
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      background: `hsl(214 85% ${92 - i * 4}% / ${0.35 + i * 0.1})`,
+                      border: `1px solid hsl(214 85% 70% / 0.2)`,
+                    }}
+                  />
+                ))}
+              </div>
+
+              {/* Student image */}
+              <div className="relative z-10 mt-10 flex justify-center">
+                <Image
+                  src={ctaStudentImg}
+                  alt="Student ready to learn"
+                  className="w-64 md:w-80 lg:w-120 object-contain drop-shadow-xl"
+                  priority
+                />
+              </div>
+            </section>
+          </motion.div>
+
+          <motion.div
+            {...animScale(0.8)}
+            className="bg-white rounded-2xl p-5 w-56 shadow-2xl self-end mb-12 hidden md:block absolute right-0 top-15"
+          >
+            <div className="flex -space-x-2 mb-3">
+              {avatars.map((src, i) => (
+                <Image
                   key={i}
-                  className="absolute rounded-full border"
-                  style={{
-                    width: size,
-                    height: size,
-                    bottom: -size / 2,
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    background: `hsl(214 85% ${92 - i * 4}% / ${0.35 + i * 0.1})`,
-                    border: `1px solid hsl(214 85% 70% / 0.2)`,
-                  }}
+                  src={src}
+                  alt="learner"
+                  width={40}
+                  height={40}
+                  className="rounded-full border-2 border-white object-cover"
                 />
               ))}
             </div>
+            <p className="text-3xl font-bold text-foreground">60k+</p>
+            <p className="text-muted-foreground text-xs mt-1 leading-snug">
+              Learners growing with expert guidance from trusted mentors.
+            </p>
+          </motion.div>
+        </div>
 
-            {/* Student image */}
-            <div className="relative z-10 mt-10 flex justify-center">
-              <Image
-                src={ctaStudentImg}
-                alt="Student ready to learn"
-                className="w-64 md:w-80 lg:w-120 object-contain drop-shadow-xl"
-                priority
-              />
-            </div>
-          </section>
-        </motion.div>
+        {/* Floating decorative elements */}
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+            className="absolute top-[45%] right-[15%] hidden lg:block"
+          >
+            <SparkleIcon className="w-10 h-10 text-star" />
+          </motion.div>
 
-        <motion.div
-          {...animScale(0.8)}
-          className="bg-white rounded-2xl p-5 w-56 shadow-2xl self-end mb-12 hidden md:block absolute right-0 top-15"
-        >
-          <div className="flex -space-x-2 mb-3">
-            {avatars.map((src, i) => (
-              <Image
-                key={i}
-                src={src}
-                alt="learner"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-white object-cover"
+          <motion.div
+            animate={{ scale: [1, 1.2, 1], rotate: [0, 15, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-[52%] left-[8%] hidden lg:block"
+          >
+            <SunBurstIcon className="w-14 h-14 text-star" />
+          </motion.div>
+
+          <motion.div
+            animate={{ y: [-4, 4, -4] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-[20%] left-[23%] hidden lg:block"
+          >
+            <svg
+              viewBox="0 0 80 60"
+              className="w-20 h-14 text-star"
+              fill="none"
+            >
+              <path
+                d="M10 50 C20 10, 40 5, 50 20"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
               />
-            ))}
-          </div>
-          <p className="text-3xl font-bold text-foreground">60k+</p>
-          <p className="text-muted-foreground text-xs mt-1 leading-snug">
-            Learners growing with expert guidance from trusted mentors.
-          </p>
-        </motion.div>
+              <path
+                d="M45 18 L55 15 L52 25"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </motion.div>
+        </div>
       </div>
-
-      {/* Floating decorative elements */}
-      <motion.div
-        animate={{ rotate: 360 }}
-        transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-        className="absolute top-[45%] right-[15%] hidden lg:block"
-      >
-        <SparkleIcon className="w-10 h-10 text-star" />
-      </motion.div>
-
-      <motion.div
-        animate={{ scale: [1, 1.2, 1], rotate: [0, 15, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-[52%] left-[8%] hidden lg:block"
-      >
-        <SunBurstIcon className="w-14 h-14 text-star" />
-      </motion.div>
-
-      <motion.div
-        animate={{ y: [-4, 4, -4] }}
-        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-[20%] left-[23%] hidden lg:block"
-      >
-        <svg viewBox="0 0 80 60" className="w-20 h-14 text-star" fill="none">
-          <path
-            d="M10 50 C20 10, 40 5, 50 20"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-          />
-          <path
-            d="M45 18 L55 15 L52 25"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </motion.div>
     </section>
   );
 }

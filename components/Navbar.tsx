@@ -23,7 +23,11 @@ const navLinks: NavLink[] = [
 export default function Navbar({ from }: NavbarProps) {
   return (
     <div className={`${from === "home"} ? "transparent" : bg-[#52a8ff]`}>
-      <nav className="relative z-20 flex items-center justify-between py-5 max-w-7xl mx-auto">
+      <nav
+        className={`relative z-20 flex items-center justify-between py-5 max-w-7xl mx-auto ${
+          from === "home" ? "px-0" : "px-6"
+        }`}
+      >
         <div className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-full bg-star flex items-center justify-center">
             <GraduationCap className="w-5 h-5 text-black" />

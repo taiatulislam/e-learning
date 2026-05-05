@@ -60,7 +60,7 @@ const anim = (delay = 0) => ({
 export default function CategoriesSection() {
   return (
     <section className="bg-background py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <HeroText
           title="Explore Our Top Course Categories"
           description="Discover a wide range of learning paths—from design to development, business to personal growth."

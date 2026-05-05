@@ -137,7 +137,7 @@ export default function PopularCourses() {
 
   return (
     <section className="bg-[#e8f0ff] py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div {...anim()} className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">

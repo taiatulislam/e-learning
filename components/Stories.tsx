@@ -33,7 +33,7 @@ const learners: Learner[] = [
 
 const Stories = () => {
   return (
-    <section className="py-20 bg-background overflow-hidden px-6">
+    <section className="py-20 bg-background overflow-hidden px-6 max-w-7xl mx-auto">
       <HeroText
         title="Stories from Our Successful Learners"
         description="See how everyday learners became professionals with guidance, effort, and expert-led learning."
