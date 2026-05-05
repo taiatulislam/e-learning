@@ -81,10 +81,7 @@ export default function Navbar({ from }: NavbarProps) {
                 <span className="text-primary">Learning</span>
               </DrawerTitle>
 
-              <DrawerDescription
-                className="text-sm text-muted-foreground"
-                className="sr-only"
-              >
+              <DrawerDescription className="text-sm text-muted-foreground sr-only">
                 Browse courses and start improving your skills today.
               </DrawerDescription>
 
