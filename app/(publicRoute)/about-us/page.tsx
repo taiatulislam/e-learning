@@ -136,19 +136,6 @@ const TEAM: TeamMember[] = [
     ],
   },
   {
-    initials: "MC",
-    name: "Marcus Chen",
-    role: "Co-founder & CTO",
-    bgClass: "bg-[#1A3D2B]",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80",
-    links: [
-      { icon: SlSocialFacebook, href: "#", label: "LinkedIn" },
-      { icon: SlSocialLinkedin, href: "#", label: "LinkedIn" },
-      { icon: SlSocialTwitter, href: "#", label: "Twitter" },
-    ],
-  },
-  {
     initials: "AO",
     name: "Amara Osei",
     role: "Chief Learning Officer",
@@ -181,19 +168,6 @@ const TEAM: TeamMember[] = [
     bgClass: "bg-[#1A2E3D]",
     image:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80",
-    links: [
-      { icon: SlSocialFacebook, href: "#", label: "LinkedIn" },
-      { icon: SlSocialLinkedin, href: "#", label: "LinkedIn" },
-      { icon: SlSocialTwitter, href: "#", label: "Twitter" },
-    ],
-  },
-  {
-    initials: "JA",
-    name: "James Adeyemi",
-    role: "Director of Partnerships",
-    bgClass: "bg-[#3D2A1A]",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
     links: [
       { icon: SlSocialFacebook, href: "#", label: "LinkedIn" },
       { icon: SlSocialLinkedin, href: "#", label: "LinkedIn" },
@@ -468,29 +442,70 @@ const AboutUs: React.FC = () => {
       </section>
 
       {/* ── TIMELINE ── */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-0 py-16">
+      <section className="max-w-7xl mx-auto px-6 sm:px-8 py-16">
         <SectionLabel>Our Journey</SectionLabel>
         <SectionTitle>Seven years of building in public</SectionTitle>
-        <div className="relative pl-7 mt-8">
-          <div className="absolute left-1.75 top-1.5 bottom-1.5 w-0.5 bg-gray-100" />
-          {TIMELINE.map((item) => (
-            <div key={item.year} className="relative pl-7 pb-10 last:pb-0">
-              <div
-                className={`absolute -left-7 top-1 w-4 h-4 rounded-full border-2 border-primary ${
-                  item.filled ? "bg-primary" : "bg-white"
-                }`}
-              />
-              <p className="text-[12px] font-semibold tracking-wide text-primary mb-1 uppercase">
-                {item.year}
-              </p>
-              <p className="text-[15px] font-semibold text-gray-900 mb-1">
-                {item.event}
-              </p>
-              <p className="text-[13.5px] text-gray-400 leading-relaxed font-light">
-                {item.detail}
-              </p>
-            </div>
-          ))}
+
+        <div className="relative mt-12">
+          {/* Vertical line */}
+          <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-gray-200 sm:-translate-x-1/2" />
+
+          <div className="flex flex-col gap-10">
+            {TIMELINE.map((item, index) => {
+              const isLeft = index % 2 === 0;
+
+              return (
+                <div
+                  key={item.year}
+                  className="relative flex flex-col sm:grid sm:grid-cols-2 sm:gap-8 items-start"
+                >
+                  {/* Timeline dot */}
+                  <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-2 z-10">
+                    <div
+                      className={`w-4.5 h-4.5 rounded-full border-2 border-primary ${
+                        item.filled ? "bg-primary" : "bg-white"
+                      }`}
+                    />
+                  </div>
+
+                  {/* Card */}
+                  <div
+                    className={`w-full sm:w-auto ${
+                      isLeft
+                        ? "sm:col-start-1 sm:pr-12 sm:text-right"
+                        : "sm:col-start-2 sm:pl-12"
+                    }`}
+                  >
+                    <div
+                      className={`bg-white border rounded-xl p-5 transition-colors hover:border-primary ${
+                        item.filled
+                          ? "border-primary/50"
+                          : "border-dashed border-primary opacity-80"
+                      }`}
+                    >
+                      <span
+                        className={`inline-block text-[11px] font-semibold tracking-[1.2px] uppercase px-3 py-1 rounded-full mb-3 ${
+                          item.filled
+                            ? "bg-green-50 text-primary"
+                            : "bg-gray-100 text-gray-400"
+                        }`}
+                      >
+                        {item.year}
+                      </span>
+
+                      <p className="text-[14.5px] font-medium text-primary mb-1.5 leading-snug">
+                        {item.event}
+                      </p>
+
+                      <p className="text-[13px] text-gray-800 leading-relaxed font-light">
+                        {item.detail}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
@@ -501,7 +516,7 @@ const AboutUs: React.FC = () => {
           <SectionTitle>
             Built by people who were once students here
           </SectionTitle>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-4">
             {TEAM.map((member) => (
               <TeamCard key={member.name} member={member} />
             ))}
