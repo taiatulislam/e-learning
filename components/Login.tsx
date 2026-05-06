@@ -148,7 +148,7 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-primary text-white py-2 mt-10 mb-2 rounded cursor-pointer"
+              className="w-full bg-primary hover:bg-blue-900 text-white py-2 mt-10 mb-2 rounded cursor-pointer"
             >
               {loading ? "Loading..." : "Login"}
             </button>
@@ -276,7 +276,7 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-primary text-white py-2 mt-10 mb-2 rounded cursor-pointer"
+              className="w-full bg-primary hover:bg-blue-900 text-white py-2 mt-10 mb-2 rounded cursor-pointer"
             >
               {loading ? "Loading..." : "Submit"}
             </button>
