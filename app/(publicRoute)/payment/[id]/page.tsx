@@ -3,7 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import { IoMdPerson } from "react-icons/io";
 import { FaStickyNote } from "react-icons/fa";
-import { FlexIconText } from "../../courseDetails/[id]/page";
+import { FlexIconText } from "../../courses/[id]/page";
 
 import bkash from "@/public/images/Bkash.png";
 import nagad from "@/public/images/Nagad.png";
@@ -13,6 +13,10 @@ import mastercard from "@/public/images/mastercard.png";
 import { useRef, useState } from "react";
 import { FaPlay, FaPause } from "react-icons/fa";
 import CustomCheckBox from "@/components/CustomCheckBox";
+import { useQuery } from "@tanstack/react-query";
+import { ICourse } from "@/type/courseType";
+import { fetchCourses } from "@/utils/helpers";
+import { useParams } from "next/navigation";
 
 interface PaymentIconProps {
   src: StaticImageData;
@@ -20,59 +24,6 @@ interface PaymentIconProps {
   name: string;
   selectPayment: string;
   setSelectPayment: (name: string) => void;
-}
-
-interface ICourse {
-  id: string;
-  language: string;
-  category: string;
-  title: string;
-  description: string;
-  feeBdt: string;
-  feeUsd: string;
-  thumbnailUrl: string;
-  thumbnailVideoUrl: string;
-  status: string;
-  sections: ISection[];
-}
-
-interface IInstructor {
-  id: string;
-  name: string;
-  instructorType: string;
-  designations: string;
-  company: string;
-  email: string;
-  phone: string;
-  imageUrl: string;
-  active: boolean;
-  createdBy: string;
-}
-
-interface ILesson {
-  id: string;
-  sectionId: string;
-  title: string;
-  description: string;
-  videoUrl: string;
-  position: number;
-  duration: string | null;
-  isRequired: boolean;
-}
-
-interface ISection {
-  id: string;
-  courseId: string;
-  instructorId: string;
-  instructor: IInstructor;
-  languageType: string | null;
-  sectionName: string;
-  className: string;
-  description: string;
-  thumbnailUrl: string;
-  videoUrl: string;
-  lessons: ILesson[];
-  position: number;
 }
 
 const payments = [
@@ -84,95 +35,20 @@ const payments = [
 ];
 
 export default function Payment() {
+  const { id } = useParams<{ id: string }>();
   const [loading, setLoading] = useState(false);
   const [acceptTerms, setAcceptTerms] = useState(false);
-  const [discount, setDiscount] = useState<number | "">(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [selectPayment, setSelectPayment] = useState(payments[0]?.name);
 
-  const course: ICourse = {
-    id: "1",
-    language: "English",
-    category: "UI/UX Design",
-    title: "Learn Figma from Basic",
-    description: "A beginner-friendly course to master Figma for UI/UX design.",
-    feeBdt: "5000",
-    feeUsd: "50",
-    thumbnailUrl:
-      "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400",
-    thumbnailVideoUrl:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
-    status: "available",
+  const { data: courses = [] } = useQuery<ICourse[]>({
+    queryKey: ["courses"],
+    queryFn: fetchCourses,
+  });
 
-    sections: [
-      {
-        id: "sec-1",
-        courseId: "1",
-        instructorId: "inst-1",
-        instructor: {
-          id: "inst-1",
-          name: "John Doe",
-          instructorType: "Senior Instructor",
-          designations: "UI/UX Designer",
-          company: "Design Studio",
-          email: "john@example.com",
-          phone: "0123456789",
-          imageUrl: "https://i.pravatar.cc/150?img=1",
-          active: true,
-          createdBy: "admin",
-        },
-        languageType: "English",
-        sectionName: "Introduction to Figma",
-        className: "Beginner",
-        description: "Get started with Figma basics and interface.",
-        thumbnailUrl:
-          "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400",
-        videoUrl: "https://example.com/intro-video",
-        position: 1,
-
-        lessons: [
-          {
-            id: "lesson-1",
-            sectionId: "sec-1",
-            title: "What is Figma?",
-            description: "Overview of Figma and its features.",
-            videoUrl: "https://example.com/video1",
-            position: 1,
-            duration: "5:30",
-            isRequired: true,
-          },
-          {
-            id: "lesson-2",
-            sectionId: "sec-1",
-            title: "Figma Interface",
-            description: "Learn about the Figma workspace.",
-            videoUrl: "https://example.com/video2",
-            position: 2,
-            duration: "8:00",
-            isRequired: true,
-          },
-        ],
-      },
-    ],
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-
-    if (value === "") {
-      setDiscount("");
-      return;
-    }
-
-    const parsed = parseFloat(value);
-    if (isNaN(parsed)) {
-      setDiscount(0);
-    } else {
-      setDiscount(parsed);
-    }
-  };
+  const course = courses.find((c) => c.id === id);
 
   const handlePlay = () => {
     videoRef.current?.play();
@@ -239,9 +115,7 @@ export default function Payment() {
             )}
 
             <div className="p-5">
-              <h3 className="text-lg font-bold">
-                BDT {parseFloat(course?.feeBdt ?? "0")}
-              </h3>
+              <h3 className="text-lg font-bold">BDT {course?.price}</h3>
 
               <p className="font-bold mt-7">What Include In this Course</p>
 
@@ -283,7 +157,7 @@ export default function Payment() {
                 Course Fee
               </label>
               <input
-                value={course?.feeBdt ? parseFloat(course.feeBdt) : ""}
+                value={course?.price}
                 type="number"
                 readOnly
                 placeholder="Enter course fee"
@@ -297,10 +171,10 @@ export default function Payment() {
               </label>
               <input
                 type="number"
-                value={discount}
+                value={course?.discount}
                 placeholder="Enter discount (if any)"
                 className="border border-gray-300 rounded-md px-3 py-2 outline-none"
-                onChange={handleChange}
+                readOnly
               />
             </div>
           </div>
@@ -310,8 +184,7 @@ export default function Payment() {
             <p className="text-lg font-bold text-primary">
               BDT{" "}
               {Math.max(
-                parseFloat(course?.feeBdt || "0") -
-                  (typeof discount === "number" ? discount : 0),
+                (course?.price ?? 0) - (course?.discount ?? 0),
                 0,
               ).toFixed(2)}
             </p>
@@ -327,9 +200,8 @@ export default function Payment() {
           <span className="text-gray">
             By Completing this Ticket Request Agree with our
           </span>
-          <span className="text-primary">
-            Terms and Conditions & Privacy Policy
-          </span>
+          <span className="text-primary font-bold">Terms and Conditions</span> &{" "}
+          <span className="text-primary font-bold">Privacy Policy.</span>
         </label>
 
         <button

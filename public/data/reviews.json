@@ -1,0 +1,72 @@
+[
+  {
+    "id": "r-1",
+    "courseId": 1,
+    "name": "Ali Khan",
+    "rating": 5,
+    "comment": "Amazing course for beginners!"
+  },
+  {
+    "id": "r-2",
+    "courseId": 1,
+    "name": "Sara Ahmed",
+    "rating": 4,
+    "comment": "Very well structured content."
+  },
+  {
+    "id": "r-3",
+    "courseId": 2,
+    "name": "John Smith",
+    "rating": 5,
+    "comment": "Best web dev course I’ve taken."
+  },
+  {
+    "id": "r-4",
+    "courseId": 2,
+    "name": "Emma Watson",
+    "rating": 4,
+    "comment": "Great explanations."
+  },
+  {
+    "id": "r-5",
+    "courseId": 3,
+    "name": "David Lee",
+    "rating": 5,
+    "comment": "Highly recommended!"
+  },
+  {
+    "id": "r-6",
+    "courseId": 3,
+    "name": "Michael Brown",
+    "rating": 4,
+    "comment": "Very useful insights."
+  },
+  {
+    "id": "r-7",
+    "courseId": 4,
+    "name": "Sophia Kim",
+    "rating": 5,
+    "comment": "Helped me improve speaking."
+  },
+  {
+    "id": "r-8",
+    "courseId": 4,
+    "name": "Noah Wilson",
+    "rating": 4,
+    "comment": "Good practice exercises."
+  },
+  {
+    "id": "r-9",
+    "courseId": 1,
+    "name": "Olivia Davis",
+    "rating": 5,
+    "comment": "Loved the UI explanations."
+  },
+  {
+    "id": "r-10",
+    "courseId": 2,
+    "name": "James Carter",
+    "rating": 4,
+    "comment": "Solid fundamentals."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cat-1",
+    "name": "UI/UX Design"
+  },
+  {
+    "id": "cat-2",
+    "name": "Web Development"
+  },
+  {
+    "id": "cat-3",
+    "name": "Business Consulting"
+  },
+  {
+    "id": "cat-4",
+    "name": "Digital Marketing"
+  },
+  {
+    "id": "cat-5",
+    "name": "Photography & Videography"
+  },
+  {
+    "id": "cat-6",
+    "name": "Language Learning"
+  },
+  {
+    "id": "cat-7",
+    "name": "Data Science"
+  },
+  {
+    "id": "cat-8",
+    "name": "Mobile App Development"
+  },
+  {
+    "id": "cat-9",
+    "name": "Cyber Security"
+  },
+  {
+    "id": "cat-10",
+    "name": "AI & Machine Learning"
+  }
+]

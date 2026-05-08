@@ -13,38 +13,38 @@ type Category = {
 
 const categories: Category[] = [
   {
-    name: "Design",
-    courses: 20,
+    name: "UI/UX Design",
+    courses: 7,
     image:
       "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop",
   },
   {
     name: "Web Development",
-    courses: 50,
+    courses: 5,
     image:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
   },
   {
     name: "Business Consulting",
-    courses: 80,
+    courses: 10,
     image:
       "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop",
   },
   {
     name: "Digital Marketing",
-    courses: 150,
+    courses: 12,
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
   },
   {
     name: "Photography & Videography",
-    courses: 105,
+    courses: 6,
     image:
       "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=300&fit=crop",
   },
   {
     name: "Language Learning",
-    courses: 80,
+    courses: 11,
     image:
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop",
   },
@@ -74,7 +74,7 @@ export default function CategoriesSection() {
               {...anim(0.1 + i * 0.08)}
               className="group cursor-pointer text-center"
             >
-              <div className="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3]">
+              <div className="relative overflow-hidden rounded-2xl mb-4 aspect-4/3">
                 <Image
                   src={cat.image}
                   alt={cat.name}

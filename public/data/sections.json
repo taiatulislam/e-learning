@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sec-1",
+    "courseId": 1,
+    "title": "Introduction to Figma",
+    "order": 1
+  },
+  {
+    "id": "sec-2",
+    "courseId": 1,
+    "title": "UI Design Basics",
+    "order": 2
+  },
+  {
+    "id": "sec-3",
+    "courseId": 1,
+    "title": "Components & Variants",
+    "order": 3
+  },
+  {
+    "id": "sec-4",
+    "courseId": 2,
+    "title": "HTML Fundamentals",
+    "order": 1
+  },
+  {
+    "id": "sec-5",
+    "courseId": 2,
+    "title": "CSS Styling",
+    "order": 2
+  },
+  {
+    "id": "sec-6",
+    "courseId": 2,
+    "title": "JavaScript Basics",
+    "order": 3
+  },
+  {
+    "id": "sec-7",
+    "courseId": 3,
+    "title": "Marketing Overview",
+    "order": 1
+  },
+  {
+    "id": "sec-8",
+    "courseId": 3,
+    "title": "Social Media Strategy",
+    "order": 2
+  },
+  {
+    "id": "sec-9",
+    "courseId": 4,
+    "title": "Speaking Practice",
+    "order": 1
+  },
+  {
+    "id": "sec-10",
+    "courseId": 4,
+    "title": "Grammar Basics",
+    "order": 2
+  }
+]

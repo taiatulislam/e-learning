@@ -70,7 +70,7 @@ const SunBurstIcon = ({ className }: { className?: string }) => (
 
 export default function HeroSection() {
   return (
-    <section className="hero-gradient min-h-screen relative">
+    <section className="hero-gradient min-h-screen relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Navbar */}
         <motion.div

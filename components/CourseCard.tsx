@@ -3,38 +3,29 @@
 import Image from "next/image";
 import { Star, BookOpen, Clock, Users } from "lucide-react";
 import Link from "next/link";
-
-export type Course = {
-  id: string;
-  title: string;
-  instructor: string;
-  lessons: number;
-  duration: string;
-  students: string;
-  price: string;
-  rating: number;
-  image: string;
-  badge?: string;
-  badgeColor?: string;
-};
+import { ICourse } from "@/type/courseType";
+import { useState } from "react";
 
 type Props = {
-  course: Course;
+  course: ICourse;
 };
 
 export default function CourseCard({ course }: Props) {
+  const [imgSrc, setImgSrc] = useState(course.thumbnailImage);
+
   return (
-    <Link href={`/courseDetails/${course.id}`}>
+    <Link href={`/courses/${course.id}`}>
       <div className="bg-card rounded-2xl border border-border overflow-hidden flex flex-col h-full shadow-sm hover:shadow-md transition-shadow duration-300 mb-5">
         {/* Image */}
         <div className="relative aspect-2/1 overflow-hidden m-2 rounded-lg">
           <Image
-            src={course.image}
+            src={imgSrc}
             alt={course.title}
             width={400}
             height={200}
             className="w-full h-full object-cover"
             priority
+            onError={() => setImgSrc("/images/placeholder.png")}
           />
 
           {/* Rating */}
@@ -63,7 +54,7 @@ export default function CourseCard({ course }: Props) {
           <p className="text-xs text-muted-foreground mb-3">
             by{" "}
             <span className="text-primary font-medium">
-              {course.instructor}
+              {course?.instructor?.map((inst) => inst.name).join(" & ")}
             </span>
           </p>
 

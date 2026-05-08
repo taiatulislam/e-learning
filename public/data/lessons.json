@@ -1,0 +1,62 @@
+[
+  {
+    "id": "l-1",
+    "sectionId": "sec-1",
+    "title": "What is Figma?",
+    "duration": "5:30"
+  },
+  {
+    "id": "l-2",
+    "sectionId": "sec-1",
+    "title": "Figma Interface Overview",
+    "duration": "8:00"
+  },
+  {
+    "id": "l-3",
+    "sectionId": "sec-2",
+    "title": "Design Principles",
+    "duration": "10:00"
+  },
+  {
+    "id": "l-4",
+    "sectionId": "sec-2",
+    "title": "Color Theory Basics",
+    "duration": "7:45"
+  },
+  {
+    "id": "l-5",
+    "sectionId": "sec-3",
+    "title": "Components in Figma",
+    "duration": "9:10"
+  },
+  {
+    "id": "l-6",
+    "sectionId": "sec-3",
+    "title": "Variants Explained",
+    "duration": "6:50"
+  },
+  {
+    "id": "l-7",
+    "sectionId": "sec-4",
+    "title": "HTML Structure",
+    "duration": "12:00"
+  },
+  {
+    "id": "l-8",
+    "sectionId": "sec-5",
+    "title": "CSS Selectors",
+    "duration": "11:30"
+  },
+  {
+    "id": "l-9",
+    "sectionId": "sec-6",
+    "title": "JavaScript Variables",
+    "duration": "10:20"
+  },
+  {
+    "id": "l-10",
+    "sectionId": "sec-7",
+    "title": "Marketing Funnel",
+    "duration": "9:00"
+  }
+]

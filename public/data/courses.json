@@ -1,0 +1,1962 @@
+[
+  {
+    "id": "course-1",
+    "title": "Figma UI Design Basics",
+    "description": "Learn UI/UX design fundamentals using Figma.",
+    "category": "UI/UX Design",
+    "instructor": [
+      {
+        "id": "inst-1",
+        "name": "John Doe",
+        "designation": "Senior UI/UX Designer",
+        "imageUrl": "https://i.pravatar.cc/300?img=1"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "2h 30m",
+    "students": 120,
+    "price": 5000,
+    "discount": 500,
+    "accessTime": "lifetime",
+    "quiz": 10,
+    "thumbnailImage": "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400",
+    "rating": 4.6,
+    "badge": "Beginner",
+    "lessons": 15,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Introduction to Figma"
+      },
+      {
+        "id": 2,
+        "text": "Figma Interface Overview"
+      },
+      {
+        "id": 3,
+        "text": "Design Principles"
+      },
+      {
+        "id": 4,
+        "text": "Color Theory Basics"
+      },
+      {
+        "id": 5,
+        "text": "Components in Figma"
+      }
+    ]
+  },
+  {
+    "id": "course-2",
+    "title": "Advanced UI Systems",
+    "description": "Build scalable UI design systems.",
+    "category": "UI/UX Design",
+    "instructor": [
+      {
+        "id": "inst-2",
+        "name": "Jane Smith",
+        "designation": "UI Architect",
+        "imageUrl": "https://i.pravatar.cc/300?img=2"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 10m",
+    "students": 80,
+    "price": 6200,
+    "discount": 800,
+    "accessTime": "lifetime",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400",
+    "rating": 4.7,
+    "badge": "Advanced",
+    "lessons": 18,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "UI System Foundations"
+      },
+      {
+        "id": 2,
+        "text": "Components & Variants"
+      },
+      {
+        "id": 3,
+        "text": "Design Tokens"
+      },
+      {
+        "id": 4,
+        "text": "Advanced Prototyping"
+      },
+      {
+        "id": 5,
+        "text": "Design Handoff"
+      }
+    ]
+  },
+  {
+    "id": "course-3",
+    "title": "UX Research Masterclass",
+    "description": "Understand users and improve experiences.",
+    "category": "UI/UX Design",
+    "instructor": [
+      {
+        "id": "inst-3",
+        "name": "Alice Johnson",
+        "designation": "UX Researcher",
+        "imageUrl": "https://i.pravatar.cc/300?img=3"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "2h 45m",
+    "students": 150,
+    "price": 5400,
+    "discount": 300,
+    "accessTime": "lifetime",
+    "quiz": 12,
+    "thumbnailImage": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=400",
+    "rating": 4.5,
+    "badge": "Intermediate",
+    "lessons": 12,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "User Research Methods"
+      },
+      {
+        "id": 2,
+        "text": "Persona Creation"
+      },
+      {
+        "id": 3,
+        "text": "User Journey Mapping"
+      },
+      {
+        "id": 4,
+        "text": "Usability Testing"
+      },
+      {
+        "id": 5,
+        "text": "Data Analysis"
+      }
+    ]
+  },
+  {
+    "id": "course-4",
+    "title": "Design Systems in Figma",
+    "description": "Build reusable design systems for products.",
+    "category": "UI/UX Design",
+    "instructor": [
+      {
+        "id": "inst-4",
+        "name": "Robert Lee",
+        "designation": "Design Lead",
+        "imageUrl": "https://i.pravatar.cc/300?img=4"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 20m",
+    "students": 95,
+    "price": 6500,
+    "discount": 600,
+    "accessTime": "lifetime",
+    "quiz": 18,
+    "thumbnailImage": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400",
+    "rating": 4.8,
+    "badge": "Popular",
+    "lessons": 20,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Introduction to Design Systems"
+      },
+      {
+        "id": 2,
+        "text": "Components & Variants"
+      },
+      {
+        "id": 3,
+        "text": "Typography & Color"
+      },
+      {
+        "id": 4,
+        "text": "Spacing & Layouts"
+      },
+      {
+        "id": 5,
+        "text": "Tokens & Guidelines"
+      }
+    ]
+  },
+  {
+    "id": "course-5",
+    "title": "HTML & CSS Fundamentals",
+    "description": "Start your web development journey with HTML & CSS.",
+    "category": "Web Development",
+    "instructor": [
+      {
+        "id": "inst-5",
+        "name": "Emily Davis",
+        "designation": "Front-End Developer",
+        "imageUrl": "https://i.pravatar.cc/300?img=5"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "2h 10m",
+    "students": 200,
+    "price": 4500,
+    "discount": 400,
+    "accessTime": "lifetime",
+    "quiz": 10,
+    "thumbnailImage": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400",
+    "rating": 4.5,
+    "badge": "Beginner",
+    "lessons": 10,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "HTML Basics"
+      },
+      {
+        "id": 2,
+        "text": "CSS Basics"
+      },
+      {
+        "id": 3,
+        "text": "Selectors & Properties"
+      },
+      {
+        "id": 4,
+        "text": "Box Model"
+      },
+      {
+        "id": 5,
+        "text": "Layout Techniques"
+      }
+    ]
+  },
+  {
+    "id": "course-6",
+    "title": "JavaScript Mastery",
+    "description": "Master JavaScript from beginner to advanced.",
+    "category": "Web Development",
+    "instructor": [
+      {
+        "id": "inst-6",
+        "name": "Michael Scott",
+        "designation": "Full Stack Developer",
+        "imageUrl": "https://i.pravatar.cc/300?img=6"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "4h 00m",
+    "students": 250,
+    "price": 5200,
+    "discount": 700,
+    "accessTime": "lifetime",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
+    "rating": 4.6,
+    "badge": "Intermediate",
+    "lessons": 22,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "JS Syntax & Variables"
+      },
+      {
+        "id": 2,
+        "text": "Functions & Loops"
+      },
+      {
+        "id": 3,
+        "text": "DOM Manipulation"
+      },
+      {
+        "id": 4,
+        "text": "Events & Listeners"
+      },
+      {
+        "id": 5,
+        "text": "ES6 Features"
+      }
+    ]
+  },
+  {
+    "id": "course-7",
+    "title": "React Complete Guide",
+    "description": "Learn React and build real-world applications.",
+    "category": "Web Development",
+    "instructorId": [
+      {
+        "id": "inst-7",
+        "name": "Sarah Brown",
+        "designation": "React Developer",
+        "imageUrl": "https://i.pravatar.cc/300?img=7"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "5h 30m",
+    "students": 320,
+    "price": 7000,
+    "discount": 800,
+    "accessTime": "lifetime",
+    "quiz": 20,
+    "thumbnailImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
+    "rating": 4.8,
+    "badge": "Popular",
+    "lessons": 25,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "React Components"
+      },
+      {
+        "id": 2,
+        "text": "JSX & Props"
+      },
+      {
+        "id": 3,
+        "text": "State & Lifecycle"
+      },
+      {
+        "id": 4,
+        "text": "Hooks Overview"
+      },
+      {
+        "id": 5,
+        "text": "Routing & Redux"
+      }
+    ]
+  },
+  {
+    "id": "course-8",
+    "title": "Next.js Full Stack",
+    "description": "Build full-stack applications with Next.js.",
+    "category": "Web Development",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "David Wilson",
+        "designation": "Full Stack Developer",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "6h 00m",
+    "students": 280,
+    "price": 7500,
+    "discount": 1000,
+    "accessTime": "lifetime",
+    "quiz": 25,
+    "thumbnailImage": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400",
+    "rating": 4.9,
+    "badge": "Advanced",
+    "lessons": 28,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Next.js Setup"
+      },
+      {
+        "id": 2,
+        "text": "Server-side Rendering"
+      },
+      {
+        "id": 3,
+        "text": "API Routes"
+      },
+      {
+        "id": 4,
+        "text": "Authentication"
+      },
+      {
+        "id": 5,
+        "text": "Deployment & Optimization"
+      }
+    ]
+  },
+  {
+    "id": "course-9",
+    "title": "Business Strategy Basics",
+    "description": "Learn the foundations of business strategy.",
+    "category": "Business Consulting",
+    "instructorId": [
+      {
+        "id": "inst-5",
+        "name": "Emily Davis",
+        "designation": "Business Consultant",
+        "imageUrl": "https://i.pravatar.cc/300?img=9"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "2h 50m",
+    "students": 110,
+    "price": 5000,
+    "discount": 400,
+    "accessTime": "lifetime",
+    "quiz": 12,
+    "thumbnailImage": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400",
+    "rating": 4.6,
+    "badge": "Beginner",
+    "lessons": 14,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Introduction to Business Strategy"
+      },
+      {
+        "id": 2,
+        "text": "SWOT Analysis"
+      },
+      {
+        "id": 3,
+        "text": "Market Research"
+      },
+      {
+        "id": 4,
+        "text": "Competitive Analysis"
+      },
+      {
+        "id": 5,
+        "text": "Strategic Planning"
+      }
+    ]
+  },
+  {
+    "id": "course-10",
+    "title": "Startup Growth Strategy",
+    "description": "Scale your startup efficiently.",
+    "category": "Business Consulting",
+    "instructorId": [
+      {
+        "id": "inst-5",
+        "name": "Emily Davis",
+        "designation": "Business Consultant",
+        "imageUrl": "https://i.pravatar.cc/300?img=5"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 15m",
+    "students": 150,
+    "price": 6200,
+    "discount": 500,
+    "accessTime": "lifetime",
+    "quiz": 18,
+    "thumbnailImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400",
+    "rating": 4.7,
+    "badge": "Popular",
+    "lessons": 16,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Startup Fundamentals"
+      },
+      {
+        "id": 2,
+        "text": "Funding Strategies"
+      },
+      {
+        "id": 3,
+        "text": "Growth Metrics"
+      },
+      {
+        "id": 4,
+        "text": "Scaling Operations"
+      },
+      {
+        "id": 5,
+        "text": "Team Building"
+      }
+    ]
+  },
+  {
+    "id": "course-11",
+    "title": "Entrepreneurship Guide",
+    "description": "Complete guide for new entrepreneurs.",
+    "category": "Business Consulting",
+    "instructorId": [
+      {
+        "id": "inst-6",
+        "name": "Michael Scott",
+        "designation": "Startup Mentor",
+        "imageUrl": "https://i.pravatar.cc/300?img=6"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "2h 30m",
+    "students": 95,
+    "price": 4800,
+    "discount": 200,
+    "accessTime": "6 months",
+    "quiz": 10,
+    "thumbnailImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400",
+    "rating": 4.5,
+    "badge": "Beginner",
+    "lessons": 12,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Entrepreneur Mindset"
+      },
+      {
+        "id": 2,
+        "text": "Idea Validation"
+      },
+      {
+        "id": 3,
+        "text": "Business Planning"
+      },
+      {
+        "id": 4,
+        "text": "Marketing Basics"
+      },
+      {
+        "id": 5,
+        "text": "Growth Hacking"
+      }
+    ]
+  },
+  {
+    "id": "course-12",
+    "title": "Leadership Skills",
+    "description": "Become an effective business leader.",
+    "category": "Business Consulting",
+    "instructorId": [
+      {
+        "id": "inst-6",
+        "name": "Michael Scott",
+        "designation": "Startup Mentor",
+        "imageUrl": "https://i.pravatar.cc/300?img=6"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 00m",
+    "students": 120,
+    "price": 5500,
+    "discount": 600,
+    "accessTime": "lifetime",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400",
+    "rating": 4.7,
+    "badge": "Advanced",
+    "lessons": 18,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Leadership Styles"
+      },
+      {
+        "id": 2,
+        "text": "Effective Communication"
+      },
+      {
+        "id": 3,
+        "text": "Decision Making"
+      },
+      {
+        "id": 4,
+        "text": "Conflict Resolution"
+      },
+      {
+        "id": 5,
+        "text": "Motivating Teams"
+      }
+    ]
+  },
+  {
+    "id": "course-13",
+    "title": "Digital Marketing Basics",
+    "description": "Learn marketing fundamentals.",
+    "category": "Digital Marketing",
+    "instructorId": [
+      {
+        "id": "inst-7",
+        "name": "Sarah Brown",
+        "designation": "Marketing Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=7"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "2h 20m",
+    "students": 220,
+    "price": 5100,
+    "discount": 300,
+    "accessTime": "lifetime",
+    "quiz": 10,
+    "thumbnailImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
+    "rating": 4.5,
+    "badge": "Beginner",
+    "lessons": 14,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Marketing Fundamentals"
+      },
+      {
+        "id": 2,
+        "text": "Branding Basics"
+      },
+      {
+        "id": 3,
+        "text": "Content Marketing"
+      },
+      {
+        "id": 4,
+        "text": "Email Marketing"
+      },
+      {
+        "id": 5,
+        "text": "Social Media Overview"
+      }
+    ]
+  },
+  {
+    "id": "course-14",
+    "title": "SEO Mastery",
+    "description": "Learn SEO and improve website ranking.",
+    "category": "Digital Marketing",
+    "instructorId": [
+      {
+        "id": "inst-7",
+        "name": "Sarah Brown",
+        "designation": "Marketing Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=7"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 00m",
+    "students": 180,
+    "price": 6200,
+    "discount": 500,
+    "accessTime": "lifetime",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400",
+    "rating": 4.7,
+    "badge": "Popular",
+    "lessons": 18,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "SEO Fundamentals"
+      },
+      {
+        "id": 2,
+        "text": "Keyword Research"
+      },
+      {
+        "id": 3,
+        "text": "On-page SEO"
+      },
+      {
+        "id": 4,
+        "text": "Off-page SEO"
+      },
+      {
+        "id": 5,
+        "text": "Analytics & Tools"
+      }
+    ]
+  },
+  {
+    "id": "course-15",
+    "title": "Facebook Ads Pro",
+    "description": "Run profitable ad campaigns on Facebook.",
+    "category": "Digital Marketing",
+    "instructorId": [
+      {
+        "id": "inst-7",
+        "name": "Sarah Brown",
+        "designation": "Marketing Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=7"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "2h 40m",
+    "students": 180,
+    "price": 6000,
+    "discount": 500,
+    "accessTime": "6 months",
+    "quiz": 12,
+    "thumbnailImage": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=400",
+    "rating": 4.6,
+    "badge": "Intermediate",
+    "lessons": 16,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Facebook Ads Overview"
+      },
+      {
+        "id": 2,
+        "text": "Audience Targeting"
+      },
+      {
+        "id": 3,
+        "text": "Ad Formats"
+      },
+      {
+        "id": 4,
+        "text": "Budgeting & Bidding"
+      },
+      {
+        "id": 5,
+        "text": "Analytics & Reporting"
+      }
+    ]
+  },
+  {
+    "id": "course-16",
+    "title": "Social Media Strategy",
+    "description": "Grow your brand on social media platforms.",
+    "category": "Digital Marketing",
+    "instructorId": [
+      {
+        "id": "inst-8",
+        "name": "David Lee",
+        "designation": "Social Media Manager",
+        "imageUrl": "https://i.pravatar.cc/300?img=8"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 10m",
+    "students": 220,
+    "price": 7000,
+    "discount": 600,
+    "accessTime": "lifetime",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=400",
+    "rating": 4.7,
+    "badge": "Advanced",
+    "lessons": 18,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Social Media Fundamentals"
+      },
+      {
+        "id": 2,
+        "text": "Content Planning"
+      },
+      {
+        "id": 3,
+        "text": "Brand Awareness"
+      },
+      {
+        "id": 4,
+        "text": "Engagement & Growth"
+      },
+      {
+        "id": 5,
+        "text": "Analytics Tools"
+      }
+    ]
+  },
+  {
+    "id": "course-17",
+    "title": "Photography Basics",
+    "description": "Master your camera and take stunning photos.",
+    "category": "Photography & Videography",
+    "instructorId": [
+      {
+        "id": "inst-9",
+        "name": "Anna White",
+        "designation": "Professional Photographer",
+        "imageUrl": "https://i.pravatar.cc/300?img=9"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "2h 00m",
+    "students": 130,
+    "price": 4500,
+    "discount": 300,
+    "accessTime": "lifetime",
+    "quiz": 8,
+    "thumbnailImage": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400",
+    "rating": 4.5,
+    "badge": "Beginner",
+    "lessons": 12,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Camera Basics"
+      },
+      {
+        "id": 2,
+        "text": "Exposure & ISO"
+      },
+      {
+        "id": 3,
+        "text": "Composition Techniques"
+      },
+      {
+        "id": 4,
+        "text": "Lighting Basics"
+      },
+      {
+        "id": 5,
+        "text": "Editing Photos"
+      }
+    ]
+  },
+  {
+    "id": "course-18",
+    "title": "DSLR Masterclass",
+    "description": "Advanced DSLR photography techniques.",
+    "category": "Photography & Videography",
+    "instructorId": [
+      {
+        "id": "inst-9",
+        "name": "Anna White",
+        "designation": "Professional Photographer",
+        "imageUrl": "https://i.pravatar.cc/300?img=9"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "4h 10m",
+    "students": 90,
+    "price": 7000,
+    "discount": 800,
+    "accessTime": "lifetime",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=400",
+    "rating": 4.7,
+    "badge": "Advanced",
+    "lessons": 20,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "DSLR Setup"
+      },
+      {
+        "id": 2,
+        "text": "Advanced Exposure"
+      },
+      {
+        "id": 3,
+        "text": "Manual Focus Techniques"
+      },
+      {
+        "id": 4,
+        "text": "Portrait Photography"
+      },
+      {
+        "id": 5,
+        "text": "Landscape Photography"
+      }
+    ]
+  },
+  {
+    "id": "course-19",
+    "title": "Video Editing Basics",
+    "description": "Edit videos professionally using popular tools.",
+    "category": "Photography & Videography",
+    "instructorId": [
+      {
+        "id": "inst-9",
+        "name": "Anna White",
+        "designation": "Professional Photographer",
+        "imageUrl": "https://i.pravatar.cc/300?img=9"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 30m",
+    "students": 120,
+    "price": 6000,
+    "discount": 500,
+    "accessTime": "6 months",
+    "quiz": 12,
+    "thumbnailImage": "https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=400",
+    "rating": 4.6,
+    "badge": "Intermediate",
+    "lessons": 18,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Video Editing Software"
+      },
+      {
+        "id": 2,
+        "text": "Timeline & Layers"
+      },
+      {
+        "id": 3,
+        "text": "Transitions & Effects"
+      },
+      {
+        "id": 4,
+        "text": "Color Grading"
+      },
+      {
+        "id": 5,
+        "text": "Export Settings"
+      }
+    ]
+  },
+  {
+    "id": "course-20",
+    "title": "Cinematic Filmmaking",
+    "description": "Create cinematic videos like a pro.",
+    "category": "Photography & Videography",
+    "instructorId": [
+      {
+        "id": "inst-9",
+        "name": "Anna White",
+        "designation": "Professional Photographer",
+        "imageUrl": "https://i.pravatar.cc/300?img=9"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "5h 00m",
+    "students": 80,
+    "price": 7500,
+    "discount": 1000,
+    "accessTime": "lifetime",
+    "quiz": 20,
+    "thumbnailImage": "https://images.unsplash.com/photo-1505238680356-667803448bb6?w=400",
+    "rating": 4.9,
+    "badge": "Pro",
+    "lessons": 25,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Storyboarding"
+      },
+      {
+        "id": 2,
+        "text": "Camera Movement"
+      },
+      {
+        "id": 3,
+        "text": "Lighting for Film"
+      },
+      {
+        "id": 4,
+        "text": "Audio & Sound Design"
+      },
+      {
+        "id": 5,
+        "text": "Editing Workflow"
+      }
+    ]
+  },
+  {
+    "id": "course-21",
+    "title": "English Speaking Basics",
+    "description": "Learn to speak English confidently.",
+    "category": "Language Learning",
+    "instructorId": [
+      {
+        "id": "inst-7",
+        "name": "Olivia Brown",
+        "designation": "Language Trainer",
+        "imageUrl": "https://i.pravatar.cc/300?img=7"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "2h 30m",
+    "students": 200,
+    "price": 4000,
+    "discount": 300,
+    "accessTime": "lifetime",
+    "quiz": 10,
+    "thumbnailImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400",
+    "rating": 4.5,
+    "badge": "Beginner",
+    "lessons": 12,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Introduction to English"
+      },
+      {
+        "id": 2,
+        "text": "Common Phrases"
+      },
+      {
+        "id": 3,
+        "text": "Pronunciation Basics"
+      },
+      {
+        "id": 4,
+        "text": "Daily Conversations"
+      },
+      {
+        "id": 5,
+        "text": "Listening Practice"
+      }
+    ]
+  },
+  {
+    "id": "course-22",
+    "title": "Grammar Mastery",
+    "description": "Master English grammar rules.",
+    "category": "Language Learning",
+    "instructorId": [
+      {
+        "id": "inst-7",
+        "name": "Olivia Brown",
+        "designation": "Language Trainer",
+        "imageUrl": "https://i.pravatar.cc/300?img=7"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 10m",
+    "students": 180,
+    "price": 4500,
+    "discount": 400,
+    "accessTime": "lifetime",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400",
+    "rating": 4.6,
+    "badge": "Intermediate",
+    "lessons": 16,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Parts of Speech"
+      },
+      {
+        "id": 2,
+        "text": "Tenses Overview"
+      },
+      {
+        "id": 3,
+        "text": "Sentence Structure"
+      },
+      {
+        "id": 4,
+        "text": "Grammar Exercises"
+      },
+      {
+        "id": 5,
+        "text": "Advanced Usage"
+      }
+    ]
+  },
+  {
+    "id": "course-23",
+    "title": "Python for Data Science",
+    "description": "Learn Python for data analysis and visualization.",
+    "category": "Data Science",
+    "instructorId": [
+      {
+        "id": "inst-8",
+        "name": "Mark Taylor",
+        "designation": "Data Scientist",
+        "imageUrl": "https://i.pravatar.cc/300?img=8"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "5h 00m",
+    "students": 250,
+    "price": 6500,
+    "discount": 500,
+    "accessTime": "lifetime",
+    "quiz": 18,
+    "thumbnailImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400",
+    "rating": 4.8,
+    "badge": "Advanced",
+    "lessons": 22,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Python Basics"
+      },
+      {
+        "id": 2,
+        "text": "Data Structures"
+      },
+      {
+        "id": 3,
+        "text": "NumPy & Pandas"
+      },
+      {
+        "id": 4,
+        "text": "Data Visualization"
+      },
+      {
+        "id": 5,
+        "text": "Data Cleaning"
+      }
+    ]
+  },
+  {
+    "id": "course-24",
+    "title": "Statistics for Data Science",
+    "description": "Understand statistical concepts for analysis.",
+    "category": "Data Science",
+    "instructorId": [
+      {
+        "id": "inst-8",
+        "name": "Mark Taylor",
+        "designation": "Data Scientist",
+        "imageUrl": "https://i.pravatar.cc/300?img=8"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "4h 30m",
+    "students": 180,
+    "price": 5800,
+    "discount": 400,
+    "accessTime": "6 months",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1581091012184-7c0ab5c6b88c?w=400",
+    "rating": 4.7,
+    "badge": "Intermediate",
+    "lessons": 18,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Descriptive Statistics"
+      },
+      {
+        "id": 2,
+        "text": "Probability Theory"
+      },
+      {
+        "id": 3,
+        "text": "Hypothesis Testing"
+      },
+      {
+        "id": 4,
+        "text": "Correlation & Regression"
+      },
+      {
+        "id": 5,
+        "text": "Statistical Analysis Tools"
+      }
+    ]
+  },
+  {
+    "id": "course-25",
+    "title": "Flutter Development",
+    "description": "Build cross-platform mobile apps with Flutter.",
+    "category": "Mobile App Development",
+    "instructorId": [
+      {
+        "id": "inst-9",
+        "name": "Laura Kim",
+        "designation": "Mobile Developer",
+        "imageUrl": "https://i.pravatar.cc/300?img=9"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "6h 00m",
+    "students": 300,
+    "price": 7200,
+    "discount": 700,
+    "accessTime": "lifetime",
+    "quiz": 20,
+    "thumbnailImage": "https://images.unsplash.com/photo-1581091012184-7c0ab5c6b88c?w=400",
+    "rating": 4.9,
+    "badge": "Advanced",
+    "lessons": 28,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Flutter Setup"
+      },
+      {
+        "id": 2,
+        "text": "Widgets & Layouts"
+      },
+      {
+        "id": 3,
+        "text": "State Management"
+      },
+      {
+        "id": 4,
+        "text": "Navigation & Routing"
+      },
+      {
+        "id": 5,
+        "text": "API Integration"
+      }
+    ]
+  },
+  {
+    "id": "course-26",
+    "title": "React Native Essentials",
+    "description": "Create mobile apps using React Native.",
+    "category": "Mobile App Development",
+    "instructorId": [
+      {
+        "id": "inst-9",
+        "name": "Laura Kim",
+        "designation": "Mobile Developer",
+        "imageUrl": "https://i.pravatar.cc/300?img=9"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "5h 30m",
+    "students": 270,
+    "price": 6800,
+    "discount": 500,
+    "accessTime": "lifetime",
+    "quiz": 18,
+    "thumbnailImage": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400",
+    "rating": 4.8,
+    "badge": "Intermediate",
+    "lessons": 24,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "React Native Setup"
+      },
+      {
+        "id": 2,
+        "text": "Components & Styling"
+      },
+      {
+        "id": 3,
+        "text": "State & Props"
+      },
+      {
+        "id": 4,
+        "text": "Navigation"
+      },
+      {
+        "id": 5,
+        "text": "Networking & API Calls"
+      }
+    ]
+  },
+  {
+    "id": "course-27",
+    "title": "Ethical Hacking Basics",
+    "description": "Learn ethical hacking and penetration testing.",
+    "category": "Cyber Security",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "Cyber Security Expert",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "4h 00m",
+    "students": 150,
+    "price": 6000,
+    "discount": 400,
+    "accessTime": "lifetime",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1581091012184-7c0ab5c6b88c?w=400",
+    "rating": 4.7,
+    "badge": "Intermediate",
+    "lessons": 18,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Cyber Security Basics"
+      },
+      {
+        "id": 2,
+        "text": "Network Security"
+      },
+      {
+        "id": 3,
+        "text": "Penetration Testing"
+      },
+      {
+        "id": 4,
+        "text": "Vulnerability Scanning"
+      },
+      {
+        "id": 5,
+        "text": "Reporting & Tools"
+      }
+    ]
+  },
+  {
+    "id": "course-28",
+    "title": "Advanced Network Security",
+    "description": "Deep dive into network security protocols.",
+    "category": "Cyber Security",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "Cyber Security Expert",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "5h 00m",
+    "students": 180,
+    "price": 6800,
+    "discount": 600,
+    "accessTime": "lifetime",
+    "quiz": 20,
+    "thumbnailImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400",
+    "rating": 4.8,
+    "badge": "Advanced",
+    "lessons": 22,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Network Protocols"
+      },
+      {
+        "id": 2,
+        "text": "Firewalls & VPNs"
+      },
+      {
+        "id": 3,
+        "text": "IDS/IPS Systems"
+      },
+      {
+        "id": 4,
+        "text": "Security Audits"
+      },
+      {
+        "id": 5,
+        "text": "Incident Response"
+      }
+    ]
+  },
+  {
+    "id": "course-29",
+    "title": "Machine Learning A-Z",
+    "description": "Learn Machine Learning from scratch.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "6h 00m",
+    "students": 200,
+    "price": 7500,
+    "discount": 800,
+    "accessTime": "lifetime",
+    "quiz": 25,
+    "thumbnailImage": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400",
+    "rating": 4.9,
+    "badge": "Pro",
+    "lessons": 28,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "ML Basics"
+      },
+      {
+        "id": 2,
+        "text": "Supervised Learning"
+      },
+      {
+        "id": 3,
+        "text": "Unsupervised Learning"
+      },
+      {
+        "id": 4,
+        "text": "Model Evaluation"
+      },
+      {
+        "id": 5,
+        "text": "Deployment"
+      }
+    ]
+  },
+  {
+    "id": "course-30",
+    "title": "Deep Learning with Python",
+    "description": "Build deep learning models with Python and TensorFlow.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "5h 30m",
+    "students": 180,
+    "price": 7200,
+    "discount": 600,
+    "accessTime": "lifetime",
+    "quiz": 20,
+    "thumbnailImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981f?w=400",
+    "rating": 4.8,
+    "badge": "Advanced",
+    "lessons": 25,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Introduction to Deep Learning"
+      },
+      {
+        "id": 2,
+        "text": "Neural Networks Basics"
+      },
+      {
+        "id": 3,
+        "text": "TensorFlow Fundamentals"
+      },
+      {
+        "id": 4,
+        "text": "Model Training"
+      },
+      {
+        "id": 5,
+        "text": "Evaluation & Deployment"
+      }
+    ]
+  },
+  {
+    "id": "course-31",
+    "title": "NLP with Python",
+    "description": "Process and analyze text data with NLP.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "4h 45m",
+    "students": 160,
+    "price": 6800,
+    "discount": 500,
+    "accessTime": "6 months",
+    "quiz": 18,
+    "thumbnailImage": "https://images.unsplash.com/photo-1558888416-2b7de2c21e1f?w=400",
+    "rating": 4.7,
+    "badge": "Intermediate",
+    "lessons": 20,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Text Preprocessing"
+      },
+      {
+        "id": 2,
+        "text": "Tokenization & Lemmatization"
+      },
+      {
+        "id": 3,
+        "text": "Bag of Words"
+      },
+      {
+        "id": 4,
+        "text": "Word Embeddings"
+      },
+      {
+        "id": 5,
+        "text": "NLP Model Training"
+      }
+    ]
+  },
+  {
+    "id": "course-32",
+    "title": "Computer Vision Essentials",
+    "description": "Learn to build computer vision models.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "5h 10m",
+    "students": 190,
+    "price": 7000,
+    "discount": 600,
+    "accessTime": "lifetime",
+    "quiz": 20,
+    "thumbnailImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981f?w=400",
+    "rating": 4.8,
+    "badge": "Advanced",
+    "lessons": 22,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Image Processing Basics"
+      },
+      {
+        "id": 2,
+        "text": "OpenCV Overview"
+      },
+      {
+        "id": 3,
+        "text": "Convolutional Neural Networks"
+      },
+      {
+        "id": 4,
+        "text": "Model Training & Evaluation"
+      },
+      {
+        "id": 5,
+        "text": "Deployment & Applications"
+      }
+    ]
+  },
+  {
+    "id": "course-33",
+    "title": "Reinforcement Learning Intro",
+    "description": "Learn fundamentals of reinforcement learning.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "4h 50m",
+    "students": 150,
+    "price": 6800,
+    "discount": 400,
+    "accessTime": "6 months",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1558888416-2b7de2c21e1f?w=400",
+    "rating": 4.7,
+    "badge": "Intermediate",
+    "lessons": 18,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "RL Basics"
+      },
+      {
+        "id": 2,
+        "text": "Markov Decision Process"
+      },
+      {
+        "id": 3,
+        "text": "Q-Learning"
+      },
+      {
+        "id": 4,
+        "text": "Policy Gradients"
+      },
+      {
+        "id": 5,
+        "text": "RL Applications"
+      }
+    ]
+  },
+  {
+    "id": "course-34",
+    "title": "AI in Finance",
+    "description": "Apply AI techniques to finance and trading.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 40m",
+    "students": 140,
+    "price": 6500,
+    "discount": 300,
+    "accessTime": "lifetime",
+    "quiz": 12,
+    "thumbnailImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981f?w=400",
+    "rating": 4.6,
+    "badge": "Intermediate",
+    "lessons": 16,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "AI Concepts"
+      },
+      {
+        "id": 2,
+        "text": "Financial Data Analysis"
+      },
+      {
+        "id": 3,
+        "text": "Predictive Models"
+      },
+      {
+        "id": 4,
+        "text": "Algorithmic Trading"
+      },
+      {
+        "id": 5,
+        "text": "Risk Management"
+      }
+    ]
+  },
+  {
+    "id": "course-35",
+    "title": "AI for Healthcare",
+    "description": "Use AI to improve healthcare solutions.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "4h 20m",
+    "students": 160,
+    "price": 6800,
+    "discount": 400,
+    "accessTime": "lifetime",
+    "quiz": 15,
+    "thumbnailImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981f?w=400",
+    "rating": 4.7,
+    "badge": "Intermediate",
+    "lessons": 18,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Healthcare AI Overview"
+      },
+      {
+        "id": 2,
+        "text": "Data & Analytics"
+      },
+      {
+        "id": 3,
+        "text": "Predictive Modelling"
+      },
+      {
+        "id": 4,
+        "text": "Image & Text Analysis"
+      },
+      {
+        "id": 5,
+        "text": "Deployment in Healthcare"
+      }
+    ]
+  },
+  {
+    "id": "course-36",
+    "title": "AI for Robotics",
+    "description": "Integrate AI techniques into robotics.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "5h 00m",
+    "students": 180,
+    "price": 7200,
+    "discount": 600,
+    "accessTime": "lifetime",
+    "quiz": 20,
+    "thumbnailImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981f?w=400",
+    "rating": 4.8,
+    "badge": "Advanced",
+    "lessons": 22,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Robotics AI Basics"
+      },
+      {
+        "id": 2,
+        "text": "Control Systems"
+      },
+      {
+        "id": 3,
+        "text": "Path Planning"
+      },
+      {
+        "id": 4,
+        "text": "Sensor Integration"
+      },
+      {
+        "id": 5,
+        "text": "AI & Robotics Projects"
+      }
+    ]
+  },
+  {
+    "id": "course-37",
+    "title": "Computer Vision Advanced",
+    "description": "Deep dive into computer vision techniques.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "6h 00m",
+    "students": 200,
+    "price": 7500,
+    "discount": 800,
+    "accessTime": "lifetime",
+    "quiz": 25,
+    "thumbnailImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981f?w=400",
+    "rating": 4.9,
+    "badge": "Pro",
+    "lessons": 28,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "CNN Advanced Concepts"
+      },
+      {
+        "id": 2,
+        "text": "Object Detection"
+      },
+      {
+        "id": 3,
+        "text": "Segmentation Techniques"
+      },
+      {
+        "id": 4,
+        "text": "Model Optimization"
+      },
+      {
+        "id": 5,
+        "text": "Deployment Strategies"
+      }
+    ]
+  },
+  {
+    "id": "course-38",
+    "title": "AI Ethics & Society",
+    "description": "Learn AI ethics and societal impact.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "3h 30m",
+    "students": 150,
+    "price": 6000,
+    "discount": 400,
+    "accessTime": "6 months",
+    "quiz": 12,
+    "thumbnailImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981f?w=400",
+    "rating": 4.6,
+    "badge": "Intermediate",
+    "lessons": 16,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "AI & Ethics Overview"
+      },
+      {
+        "id": 2,
+        "text": "Bias in AI"
+      },
+      {
+        "id": 3,
+        "text": "AI Governance"
+      },
+      {
+        "id": 4,
+        "text": "Societal Impacts"
+      },
+      {
+        "id": 5,
+        "text": "Future of AI"
+      }
+    ]
+  },
+  {
+    "id": "course-39",
+    "title": "AI Project Deployment",
+    "description": "Deploy AI models to production environments.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "4h 50m",
+    "students": 180,
+    "price": 6800,
+    "discount": 500,
+    "accessTime": "lifetime",
+    "quiz": 18,
+    "thumbnailImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981f?w=400",
+    "rating": 4.7,
+    "badge": "Advanced",
+    "lessons": 20,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Deployment Basics"
+      },
+      {
+        "id": 2,
+        "text": "Cloud Setup"
+      },
+      {
+        "id": 3,
+        "text": "Model Serving"
+      },
+      {
+        "id": 4,
+        "text": "Monitoring & Logging"
+      },
+      {
+        "id": 5,
+        "text": "Scaling Models"
+      }
+    ]
+  },
+  {
+    "id": "course-40",
+    "title": "AI Capstone Project",
+    "description": "End-to-end AI project experience.",
+    "category": "AI & Machine Learning",
+    "instructorId": [
+      {
+        "id": "inst-10",
+        "name": "Kevin Hart",
+        "designation": "AI Specialist",
+        "imageUrl": "https://i.pravatar.cc/300?img=10"
+      }
+    ],
+    "language": "English",
+    "status": "available",
+    "duration": "6h 00m",
+    "students": 220,
+    "price": 7500,
+    "discount": 800,
+    "accessTime": "lifetime",
+    "quiz": 25,
+    "thumbnailImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981f?w=400",
+    "rating": 4.9,
+    "badge": "Pro",
+    "lessons": 28,
+    "thumbnailVideoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "courseContent": [
+      {
+        "id": 1,
+        "text": "Project Planning"
+      },
+      {
+        "id": 2,
+        "text": "Data Collection"
+      },
+      {
+        "id": 3,
+        "text": "Model Development"
+      },
+      {
+        "id": 4,
+        "text": "Evaluation & Optimization"
+      },
+      {
+        "id": 5,
+        "text": "Presentation & Deployment"
+      }
+    ]
+  }
+]
