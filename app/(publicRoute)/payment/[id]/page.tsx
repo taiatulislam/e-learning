@@ -121,10 +121,10 @@ export default function Payment() {
 
               <FlexIconText
                 icon={IoMdPerson}
-                text="400 Students Enrolled This Course"
+                text={`${course?.students} Students Enrolled This Course`}
               />
               <FlexIconText icon={FaStickyNote} text="Class Note" />
-              <FlexIconText icon={FaStickyNote} text="4 Quiz" />
+              <FlexIconText icon={FaStickyNote} text={`${course?.quiz} Quiz`} />
             </div>
           </div>
         </div>
@@ -198,7 +198,7 @@ export default function Payment() {
             handleChange={() => setAcceptTerms(!acceptTerms)}
           />
           <span className="text-gray">
-            By Completing this Ticket Request Agree with our
+            By Completing this Payment Request Agree with our
           </span>
           <span className="text-primary font-bold">Terms and Conditions</span> &{" "}
           <span className="text-primary font-bold">Privacy Policy.</span>

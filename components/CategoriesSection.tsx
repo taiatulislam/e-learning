@@ -4,60 +4,30 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { HeroText } from "./HeroText";
-
-type Category = {
-  name: string;
-  courses: number;
-  image: string;
-};
-
-const categories: Category[] = [
-  {
-    name: "UI/UX Design",
-    courses: 7,
-    image:
-      "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop",
-  },
-  {
-    name: "Web Development",
-    courses: 5,
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
-  },
-  {
-    name: "Business Consulting",
-    courses: 10,
-    image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop",
-  },
-  {
-    name: "Digital Marketing",
-    courses: 12,
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
-  },
-  {
-    name: "Photography & Videography",
-    courses: 6,
-    image:
-      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=300&fit=crop",
-  },
-  {
-    name: "Language Learning",
-    courses: 11,
-    image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop",
-  },
-];
+import { useRouter } from "next/navigation";
+import { useQuery } from "@tanstack/react-query";
+import { ICategory } from "@/type/categoryType";
+import { fetchCategories } from "@/utils/helpers";
 
 const anim = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: "-50px" },
+  viewport: { once: false, margin: "-50px" },
   transition: { duration: 0.5, delay },
 });
 
 export default function CategoriesSection() {
+  const router = useRouter();
+
+  const { data: categories = [] } = useQuery<ICategory[]>({
+    queryKey: ["categories"],
+    queryFn: fetchCategories,
+  });
+
+  const handleCategoryClick = (catName: string) => {
+    router.push(`/courses?category=${encodeURIComponent(catName)}`);
+  };
+
   return (
     <section className="bg-background py-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -68,11 +38,12 @@ export default function CategoriesSection() {
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {categories.map((cat, i) => (
+          {categories.slice(0, 6).map((cat, i) => (
             <motion.div
               key={cat.name}
               {...anim(0.1 + i * 0.08)}
               className="group cursor-pointer text-center"
+              onClick={() => handleCategoryClick(cat.name)}
             >
               <div className="relative overflow-hidden rounded-2xl mb-4 aspect-4/3">
                 <Image

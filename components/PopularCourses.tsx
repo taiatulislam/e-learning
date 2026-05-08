@@ -21,7 +21,7 @@ import { fetchCategories, fetchCourses } from "@/utils/helpers";
 const anim = (delay: number = 0): MotionProps => ({
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: "-50px" },
+  viewport: { once: false, margin: "-50px" },
   transition: { duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] },
 });
 
@@ -30,7 +30,7 @@ export default function PopularCourses() {
 
   const {
     data: courses = [],
-    isLoading,
+    isLoading: coursesLoading,
     isError,
     error,
   } = useQuery<ICourse[]>({
@@ -38,14 +38,13 @@ export default function PopularCourses() {
     queryFn: fetchCourses,
   });
 
-  const {
-    data: categories = [{ id: "cat-0", name: "All courses" }],
-  } = useQuery<ICategory[]>({
-    queryKey: ["categories"],
-    queryFn: fetchCategories,
-  });
+  const { data: categories = [{ id: "cat-0", name: "All courses" }] } =
+    useQuery<ICategory[]>({
+      queryKey: ["categories"],
+      queryFn: fetchCategories,
+    });
 
-  if (isLoading) {
+  if (coursesLoading && courses.length === 0) {
     return <p>Loading...</p>;
   }
 
@@ -77,7 +76,7 @@ export default function PopularCourses() {
           {...anim(0.1)}
           className="flex flex-wrap justify-center gap-2 mb-10"
         >
-          {categories.map((cat) => (
+          {categories?.slice(0, 6).map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.name)}
@@ -118,9 +117,7 @@ export default function PopularCourses() {
           >
             {filtered?.map((course, i) => (
               <SwiperSlide key={course.title + i}>
-                <CourseCard
-                  course={course}
-                />
+                <CourseCard course={course} />
               </SwiperSlide>
             ))}
           </Swiper>

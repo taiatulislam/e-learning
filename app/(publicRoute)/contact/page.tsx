@@ -1,5 +1,6 @@
 "use client";
 
+import CustomCheckBox from "@/components/CustomCheckBox";
 import React, { useState, useRef } from "react";
 
 interface ContactChannel {
@@ -95,13 +96,6 @@ const FAQS: FAQ[] = [
   },
 ];
 
-const SOCIAL = [
-  { label: "Twitter", icon: "𝕏", href: "#" },
-  { label: "LinkedIn", icon: "in", href: "#" },
-  { label: "YouTube", icon: "▶", href: "#" },
-  { label: "Instagram", icon: "◻", href: "#" },
-];
-
 const ChannelCard = ({ channel }: { channel: ContactChannel }) => (
   <a
     href={channel.href}
@@ -124,6 +118,7 @@ const ChannelCard = ({ channel }: { channel: ContactChannel }) => (
 
 const FaqItem: React.FC<{ faq: FAQ; index: number }> = ({ faq, index }) => {
   const [open, setOpen] = useState(false);
+
   return (
     <div className="border border-gray-100 rounded-xl overflow-hidden">
       <button
@@ -170,6 +165,7 @@ const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>("idle");
   const [errors, setErrors] = useState<Partial<FormState>>({});
   const formRef = useRef<HTMLFormElement>(null);
+  const [acceptTerms, setAcceptTerms] = useState(false);
 
   const validate = (): boolean => {
     const newErrors: Partial<FormState> = {};
@@ -402,17 +398,24 @@ const Contact = () => {
                 </div>
 
                 {/* Privacy note */}
-                <p className="text-[12px] text-gray-400 font-light leading-relaxed">
-                  By submitting this form, you agree to our{" "}
-                  <a
-                    href="#"
-                    className="text-primary hover:underline"
-                    style={{ textDecoration: "none" }}
-                  >
-                    Privacy Policy
-                  </a>
-                  . We never sell your data, ever.
-                </p>
+                <label className="text-gray-400 text-xs flex items-center gap-2 cursor-pointer mb-10">
+                  <CustomCheckBox
+                    value={acceptTerms}
+                    label=""
+                    handleChange={() => setAcceptTerms(!acceptTerms)}
+                  />
+                  <span className="">
+                    By submitting this form, you agree to our
+                  </span>
+                  <span className="text-primary font-bold">
+                    Terms and Conditions
+                  </span>{" "}
+                  &{" "}
+                  <span className="text-primary font-bold">
+                    Privacy Policy.
+                  </span>
+                  We never sell your data, ever.
+                </label>
 
                 {/* Submit */}
                 <button

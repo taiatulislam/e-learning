@@ -32,7 +32,7 @@ export default function Page() {
   });
 
   const categories: ICategory[] = [
-    { id: "all", name: "All courses" },
+    { id: "all", name: "All courses", image: "", courses: 0 },
     ...fetchedCategories,
   ];
 

@@ -2,6 +2,7 @@
 
 import { ArrowUpRight, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import {
   Drawer,
   DrawerContent,
@@ -51,12 +52,12 @@ export default function Navbar({ from }: NavbarProps) {
         <ul className="hidden md:flex items-center gap-7">
           {navLinks.map((link) => (
             <li key={link.label}>
-              <a
+              <Link
                 href={link.href}
                 className="text-sm font-medium text-white/90 hover:text-white transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

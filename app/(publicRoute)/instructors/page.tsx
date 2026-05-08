@@ -1,207 +1,18 @@
 "use client";
 
+import { ICategory } from "@/type/categoryType";
+import { IInstructor } from "@/type/instructorType";
+import { fetchCategories, fetchInstructors } from "@/utils/helpers";
+import { useQuery } from "@tanstack/react-query";
 import React, { useState, useMemo } from "react";
+import Link from "next/link";
 import {
   SlSocialFacebook,
   SlSocialTwitter,
   SlSocialLinkedin,
 } from "react-icons/sl";
 
-interface Instructor {
-  id: number;
-  initials: string;
-  name: string;
-  title: string;
-  category: string;
-  rating: number;
-  reviews: number;
-  students: number;
-  courses: number;
-  skills: string[];
-  bio: string;
-  badge?: string;
-  avatarGrad: string;
-  featured?: boolean;
-  social: {
-    linkedin?: string;
-    twitter?: string;
-    facebook?: string;
-    website?: string;
-  };
-}
-
 type SortKey = "rating" | "students" | "courses" | "reviews";
-type Category =
-  | "All"
-  | "Machine Learning"
-  | "Design"
-  | "Web Dev"
-  | "Business"
-  | "Data Science"
-  | "Cybersecurity";
-
-const INSTRUCTORS: Instructor[] = [
-  {
-    id: 1,
-    initials: "SR",
-    name: "Sarah R. Nguyen",
-    title: "Senior ML Engineer · Google Brain Alumni",
-    category: "Machine Learning",
-    rating: 4.9,
-    reviews: 18200,
-    students: 94200,
-    courses: 12,
-    skills: ["Machine Learning", "PyTorch", "LLMs"],
-    bio: "8+ years building production AI systems at Google and Meta. Stanford PhD candidate specialising in large language models.",
-    badge: "Top Instructor",
-    avatarGrad: "linear-gradient(135deg, #1E3A5F 0%, #2d5f9e 100%)",
-    featured: true,
-    social: { linkedin: "#", twitter: "#", facebook: "#" },
-  },
-  {
-    id: 2,
-    initials: "MC",
-    name: "Marcus Chen",
-    title: "Full-Stack Architect · Ex-Stripe",
-    category: "Web Dev",
-    rating: 4.8,
-    reviews: 12400,
-    students: 67500,
-    courses: 9,
-    skills: ["React", "Node.js", "System Design"],
-    bio: "Former principal engineer at Stripe. Obsessed with scalable systems and teaching engineers to think in distributed architectures.",
-    badge: "Best Seller",
-    avatarGrad: "linear-gradient(135deg, #1A3D2B 0%, #2d7a4f 100%)",
-    featured: true,
-    social: { linkedin: "#", facebook: "#",},
-  },
-  {
-    id: 3,
-    initials: "AO",
-    name: "Amara Osei",
-    title: "Product Design Lead · Figma Advocate",
-    category: "Design",
-    rating: 4.9,
-    reviews: 9800,
-    students: 52000,
-    courses: 7,
-    skills: ["Figma", "UX Research", "Design Systems"],
-    bio: "Award-winning product designer with 10+ years crafting interfaces for startups and Fortune 500 companies alike.",
-    badge: "Top Rated",
-    avatarGrad: "linear-gradient(135deg, #3D1A1A 0%, #8b3535 100%)",
-    featured: false,
-    social: { linkedin: "#", twitter: "#" },
-  },
-  {
-    id: 4,
-    initials: "RV",
-    name: "Rafael Vargas",
-    title: "Data Scientist · Kaggle Grandmaster",
-    category: "Data Science",
-    rating: 4.7,
-    reviews: 7600,
-    students: 41200,
-    courses: 6,
-    skills: ["Python", "Pandas", "Statistics"],
-    bio: "Kaggle Grandmaster and data science consultant. I translate complex statistical concepts into practical, real-world solutions.",
-    avatarGrad: "linear-gradient(135deg, #2A1A3D 0%, #6d3d9e 100%)",
-    featured: false,
-    social: { linkedin: "#", facebook: "#" },
-  },
-  {
-    id: 5,
-    initials: "LN",
-    name: "Lena Nordström",
-    title: "Business Strategist · Harvard MBA",
-    category: "Business",
-    rating: 4.8,
-    reviews: 11300,
-    students: 58900,
-    courses: 8,
-    skills: ["Strategy", "Finance", "Leadership"],
-    bio: "Harvard MBA and former McKinsey consultant. I help founders and leaders build businesses that last decades, not just quarters.",
-    badge: "Best Seller",
-    avatarGrad: "linear-gradient(135deg, #1A2E3D 0%, #2d5f7a 100%)",
-    featured: true,
-    social: { linkedin: "#", twitter: "#" },
-  },
-  {
-    id: 6,
-    initials: "JA",
-    name: "James Adeyemi",
-    title: "Cybersecurity Expert · CISSP",
-    category: "Cybersecurity",
-    rating: 4.9,
-    reviews: 6200,
-    students: 33400,
-    courses: 5,
-    skills: ["Ethical Hacking", "Network Security", "CTF"],
-    bio: "CISSP-certified security engineer with a decade in penetration testing and red team operations across finance and government.",
-    badge: "New",
-    avatarGrad: "linear-gradient(135deg, #3D2A1A 0%, #9e6d2d 100%)",
-    featured: false,
-    social: { linkedin: "#", facebook: "#" },
-  },
-  {
-    id: 7,
-    initials: "PK",
-    name: "Priya Kapoor",
-    title: "iOS & Android Developer · Apple Scholar",
-    category: "Web Dev",
-    rating: 4.8,
-    reviews: 8100,
-    students: 45600,
-    courses: 7,
-    skills: ["Swift", "Kotlin", "Flutter"],
-    bio: "Apple Scholar and senior mobile engineer. I've shipped apps with 10M+ downloads and love teaching the craft of mobile excellence.",
-    avatarGrad: "linear-gradient(135deg, #1A3A3D 0%, #2d7a7e 100%)",
-    featured: false,
-    social: { linkedin: "#", twitter: "#", facebook: "#" },
-  },
-  {
-    id: 8,
-    initials: "TS",
-    name: "Thomas Schulz",
-    title: "Deep Learning Researcher · NeurIPS Author",
-    category: "Machine Learning",
-    rating: 4.6,
-    reviews: 4900,
-    students: 28700,
-    courses: 4,
-    skills: ["TensorFlow", "Computer Vision", "Research"],
-    bio: "Published researcher at NeurIPS and ICML. I bridge the gap between cutting-edge academic research and practical engineering.",
-    avatarGrad: "linear-gradient(135deg, #1A1A3D 0%, #35358b 100%)",
-    featured: false,
-    social: { linkedin: "#", facebook: "#" },
-  },
-  {
-    id: 9,
-    initials: "FM",
-    name: "Fatima Malik",
-    title: "UX Strategist · Google Design Alumni",
-    category: "Design",
-    rating: 4.9,
-    reviews: 7400,
-    students: 39800,
-    courses: 6,
-    skills: ["User Research", "Prototyping", "Accessibility"],
-    bio: "Former Google Design team member. I specialise in user research-driven design that balances business goals with human needs.",
-    badge: "Top Rated",
-    avatarGrad: "linear-gradient(135deg, #3D1A2E 0%, #8b3579 100%)",
-    featured: false,
-    social: { linkedin: "#", twitter: "#" },
-  },
-];
-
-const CATEGORIES: Category[] = [
-  "All",
-  "Machine Learning",
-  "Design",
-  "Web Dev",
-  "Business",
-  "Data Science",
-  "Cybersecurity",
-];
 
 const SORT_OPTIONS: { label: string; value: SortKey }[] = [
   { label: "Highest rated", value: "rating" },
@@ -235,7 +46,7 @@ const Stars: React.FC<{ rating: number }> = ({ rating }) => {
   );
 };
 
-const InstructorCard: React.FC<{ instructor: Instructor }> = ({
+const InstructorCard: React.FC<{ instructor: IInstructor }> = ({
   instructor: ins,
 }) => {
   return (
@@ -247,7 +58,11 @@ const InstructorCard: React.FC<{ instructor: Instructor }> = ({
       >
         {/* Avatar */}
         <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-md border-4 border-white/20 flex items-center justify-center text-white text-2xl font-bold">
-          {ins.initials}
+          {ins.name
+            ?.split(" ")
+            .map((word: string) => word[0])
+            .join("")
+            .toUpperCase()}
         </div>
 
         {/* Badge */}
@@ -258,18 +73,20 @@ const InstructorCard: React.FC<{ instructor: Instructor }> = ({
         )}
 
         {/* Category */}
-        <span className="absolute top-3 right-3 text-xs px-2 py-1 rounded-full bg-black/30 text-white">
-          {ins.category}
-        </span>
+        <div className="absolute top-3 right-3 flex flex-wrap gap-2">
+          <span className="text-xs px-2 py-1 rounded-full bg-black/30 text-white">
+            {ins.categories[0]}
+          </span>
+        </div>
 
         {/* Hover overlay (desktop only) */}
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-          <a
+          <Link
             href={`/instructors/${ins.id}`}
             className="text-sm font-semibold text-white border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-gray-900 transition"
           >
             View Profile
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -278,7 +95,7 @@ const InstructorCard: React.FC<{ instructor: Instructor }> = ({
         {/* Name */}
         <div>
           <h3 className="text-sm font-semibold text-gray-900">{ins.name}</h3>
-          <p className="text-xs text-gray-400">{ins.title}</p>
+          <p className="text-xs text-gray-400">{ins.name}</p>
         </div>
 
         {/* Rating */}
@@ -307,14 +124,14 @@ const InstructorCard: React.FC<{ instructor: Instructor }> = ({
         {/* Bio */}
         <p className="text-xs text-gray-500 line-clamp-2">{ins.bio}</p>
 
-        {/* Skills */}
+        {/* expertise */}
         <div className="flex flex-wrap gap-1 mt-auto">
-          {ins.skills.slice(0, 4).map((skill) => (
+          {ins.expertise.slice(0, 4).map((expert) => (
             <span
-              key={skill}
+              key={expert}
               className="text-[10px] px-2 py-1 bg-blue-50 border rounded-full text-gray-500"
             >
-              {skill}
+              {expert}
             </span>
           ))}
         </div>
@@ -350,19 +167,19 @@ const InstructorCard: React.FC<{ instructor: Instructor }> = ({
           </div>
 
           {/* CTA */}
-          <a
+          <Link
             href={`/instructors/${ins.id}`}
             className="text-xs font-semibold text-primary hover:text-blue-900"
           >
             Courses →
-          </a>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-const FeaturedStrip: React.FC<{ instructors: Instructor[] }> = ({
+const FeaturedStrip: React.FC<{ instructors: IInstructor[] }> = ({
   instructors,
 }) => {
   const featured = instructors.filter((i) => i.featured).slice(0, 3);
@@ -382,7 +199,7 @@ const FeaturedStrip: React.FC<{ instructors: Instructor[] }> = ({
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {featured.map((ins) => (
-            <a
+            <Link
               key={ins.id}
               href={`/instructors/${ins.id}`}
               className="flex items-center gap-4 p-4 rounded-2xl border border-white/10 hover:border-white/25 hover:bg-white/5 transition-all duration-200 group"
@@ -394,15 +211,26 @@ const FeaturedStrip: React.FC<{ instructors: Instructor[] }> = ({
                   background: ins.avatarGrad,
                 }}
               >
-                {ins.initials}
+                {ins.name
+                  ?.split(" ")
+                  .map((word: string) => word[0])
+                  .join("")
+                  .toUpperCase()}
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[14px] font-semibold text-white leading-snug truncate">
                   {ins.name}
                 </p>
-                <p className="text-[11.5px] text-white/45 font-light truncate">
-                  {ins.category}
-                </p>
+
+                {ins.categories?.map((category: string, index: number) => (
+                  <p
+                    key={index}
+                    className="text-[11.5px] text-white/45 font-light truncate"
+                  >
+                    {category}
+                  </p>
+                ))}
+
                 <div className="flex items-center gap-1.5 mt-1">
                   <span className="text-amber-400 text-[12px]">
                     ★ {ins.rating}
@@ -415,7 +243,7 @@ const FeaturedStrip: React.FC<{ instructors: Instructor[] }> = ({
               <span className="text-white/30 group-hover:text-white/70 text-[18px] transition-colors shrink-0">
                 →
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -425,23 +253,48 @@ const FeaturedStrip: React.FC<{ instructors: Instructor[] }> = ({
 
 const Instructors = () => {
   const [search, setSearch] = useState("");
-  const [activeCategory, setActiveCategory] = useState<Category>("All");
+  const [activeCategory, setActiveCategory] = useState<string>("All");
   const [sortKey, setSortKey] = useState<SortKey>("rating");
 
+  const { data: instructors = [], isLoading } = useQuery<IInstructor[]>({
+    queryKey: ["instructors"],
+    queryFn: fetchInstructors,
+  });
+
+  const { data: fetchedCategories = [] } = useQuery<ICategory[]>({
+    queryKey: ["categories"],
+    queryFn: fetchCategories,
+  });
+
+  const categories: ICategory[] = [
+    { id: "all", name: "All", image: "", courses: 0 },
+    ...fetchedCategories,
+  ];
+
+  // safe number conversion
+  const toNumber = (val: unknown) =>
+    typeof val === "number"
+      ? val
+      : Number(String(val ?? "").replace(/\D/g, "")) || 0;
+
   const filtered = useMemo(() => {
-    let list = [...INSTRUCTORS];
-    if (activeCategory !== "All")
-      list = list.filter((i) => i.category === activeCategory);
-    if (search.trim())
-      list = list.filter(
-        (i) =>
-          i.name.toLowerCase().includes(search.toLowerCase()) ||
-          i.title.toLowerCase().includes(search.toLowerCase()) ||
-          i.skills.some((s) => s.toLowerCase().includes(search.toLowerCase())),
-      );
-    list.sort((a, b) => b[sortKey] - a[sortKey]);
-    return list;
-  }, [search, activeCategory, sortKey]);
+    const q = search.trim().toLowerCase();
+
+    return instructors
+      .filter((i) =>
+        activeCategory === "All"
+          ? true
+          : (i.categories ?? []).includes(activeCategory),
+      )
+      .filter((i) =>
+        q
+          ? i.name?.toLowerCase().includes(q) ||
+            i.designation?.toLowerCase().includes(q) ||
+            (i.categories ?? []).some((e) => e.toLowerCase().includes(q))
+          : true,
+      )
+      .sort((a, b) => toNumber(b[sortKey]) - toNumber(a[sortKey]));
+  }, [instructors, search, activeCategory, sortKey]);
 
   return (
     <div className="bg-[#FAFAF8] text-gray-900 min-h-screen mb-10">
@@ -493,7 +346,7 @@ const Instructors = () => {
       </section>
 
       {/* ── FEATURED STRIP ── */}
-      <FeaturedStrip instructors={INSTRUCTORS} />
+      <FeaturedStrip instructors={instructors} />
 
       <section className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8">
@@ -524,17 +377,17 @@ const Instructors = () => {
                 Categories
               </p>
               <div className="flex flex-col gap-2">
-                {CATEGORIES.map((cat) => (
+                {categories.map((cat) => (
                   <button
-                    key={cat}
-                    onClick={() => setActiveCategory(cat)}
+                    key={cat.id}
+                    onClick={() => setActiveCategory(cat.name)}
                     className={`text-left px-3 py-2 rounded-lg text-sm transition ${
-                      activeCategory === cat
-                        ? "bg-gray-900 text-white"
+                      activeCategory === cat.name
+                        ? "bg-primary text-white"
                         : "text-gray-600 hover:bg-gray-100"
                     }`}
                   >
-                    {cat}
+                    {cat.name}
                   </button>
                 ))}
               </div>
@@ -592,7 +445,14 @@ const Instructors = () => {
             </div>
 
             {/* Grid */}
-            {filtered.length === 0 ? (
+            {isLoading && instructors.length === 0 ? (
+              <div className="text-center py-20">
+                <p className="text-3xl mb-4 animate-pulse">⏳</p>
+                <p className="text-lg font-medium text-gray-700">
+                  Loading instructors...
+                </p>
+              </div>
+            ) : filtered.length === 0 ? (
               <div className="text-center py-20">
                 <p className="text-5xl mb-4">🔍</p>
                 <p className="text-lg font-medium text-gray-700">
