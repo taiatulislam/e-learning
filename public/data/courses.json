@@ -298,7 +298,7 @@
     "title": "React Complete Guide",
     "description": "Learn React and build real-world applications.",
     "category": "Web Development",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-7",
         "name": "Sarah Brown",
@@ -347,7 +347,7 @@
     "title": "Next.js Full Stack",
     "description": "Build full-stack applications with Next.js.",
     "category": "Web Development",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "David Wilson",
@@ -396,7 +396,7 @@
     "title": "Business Strategy Basics",
     "description": "Learn the foundations of business strategy.",
     "category": "Business Consulting",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-5",
         "name": "Emily Davis",
@@ -445,7 +445,7 @@
     "title": "Startup Growth Strategy",
     "description": "Scale your startup efficiently.",
     "category": "Business Consulting",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-5",
         "name": "Emily Davis",
@@ -494,7 +494,7 @@
     "title": "Entrepreneurship Guide",
     "description": "Complete guide for new entrepreneurs.",
     "category": "Business Consulting",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-6",
         "name": "Michael Scott",
@@ -543,7 +543,7 @@
     "title": "Leadership Skills",
     "description": "Become an effective business leader.",
     "category": "Business Consulting",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-6",
         "name": "Michael Scott",
@@ -592,7 +592,7 @@
     "title": "Digital Marketing Basics",
     "description": "Learn marketing fundamentals.",
     "category": "Digital Marketing",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-7",
         "name": "Sarah Brown",
@@ -641,7 +641,7 @@
     "title": "SEO Mastery",
     "description": "Learn SEO and improve website ranking.",
     "category": "Digital Marketing",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-7",
         "name": "Sarah Brown",
@@ -690,7 +690,7 @@
     "title": "Facebook Ads Pro",
     "description": "Run profitable ad campaigns on Facebook.",
     "category": "Digital Marketing",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-7",
         "name": "Sarah Brown",
@@ -739,7 +739,7 @@
     "title": "Social Media Strategy",
     "description": "Grow your brand on social media platforms.",
     "category": "Digital Marketing",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-8",
         "name": "David Lee",
@@ -788,7 +788,7 @@
     "title": "Photography Basics",
     "description": "Master your camera and take stunning photos.",
     "category": "Photography & Videography",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-9",
         "name": "Anna White",
@@ -837,7 +837,7 @@
     "title": "DSLR Masterclass",
     "description": "Advanced DSLR photography techniques.",
     "category": "Photography & Videography",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-9",
         "name": "Anna White",
@@ -886,7 +886,7 @@
     "title": "Video Editing Basics",
     "description": "Edit videos professionally using popular tools.",
     "category": "Photography & Videography",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-9",
         "name": "Anna White",
@@ -935,7 +935,7 @@
     "title": "Cinematic Filmmaking",
     "description": "Create cinematic videos like a pro.",
     "category": "Photography & Videography",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-9",
         "name": "Anna White",
@@ -984,7 +984,7 @@
     "title": "English Speaking Basics",
     "description": "Learn to speak English confidently.",
     "category": "Language Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-7",
         "name": "Olivia Brown",
@@ -1033,7 +1033,7 @@
     "title": "Grammar Mastery",
     "description": "Master English grammar rules.",
     "category": "Language Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-7",
         "name": "Olivia Brown",
@@ -1082,7 +1082,7 @@
     "title": "Python for Data Science",
     "description": "Learn Python for data analysis and visualization.",
     "category": "Data Science",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-8",
         "name": "Mark Taylor",
@@ -1131,7 +1131,7 @@
     "title": "Statistics for Data Science",
     "description": "Understand statistical concepts for analysis.",
     "category": "Data Science",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-8",
         "name": "Mark Taylor",
@@ -1180,7 +1180,7 @@
     "title": "Flutter Development",
     "description": "Build cross-platform mobile apps with Flutter.",
     "category": "Mobile App Development",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-9",
         "name": "Laura Kim",
@@ -1229,7 +1229,7 @@
     "title": "React Native Essentials",
     "description": "Create mobile apps using React Native.",
     "category": "Mobile App Development",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-9",
         "name": "Laura Kim",
@@ -1278,7 +1278,7 @@
     "title": "Ethical Hacking Basics",
     "description": "Learn ethical hacking and penetration testing.",
     "category": "Cyber Security",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1327,7 +1327,7 @@
     "title": "Advanced Network Security",
     "description": "Deep dive into network security protocols.",
     "category": "Cyber Security",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1376,7 +1376,7 @@
     "title": "Machine Learning A-Z",
     "description": "Learn Machine Learning from scratch.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1425,7 +1425,7 @@
     "title": "Deep Learning with Python",
     "description": "Build deep learning models with Python and TensorFlow.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1474,7 +1474,7 @@
     "title": "NLP with Python",
     "description": "Process and analyze text data with NLP.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1523,7 +1523,7 @@
     "title": "Computer Vision Essentials",
     "description": "Learn to build computer vision models.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1572,7 +1572,7 @@
     "title": "Reinforcement Learning Intro",
     "description": "Learn fundamentals of reinforcement learning.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1621,7 +1621,7 @@
     "title": "AI in Finance",
     "description": "Apply AI techniques to finance and trading.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1670,7 +1670,7 @@
     "title": "AI for Healthcare",
     "description": "Use AI to improve healthcare solutions.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1719,7 +1719,7 @@
     "title": "AI for Robotics",
     "description": "Integrate AI techniques into robotics.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1768,7 +1768,7 @@
     "title": "Computer Vision Advanced",
     "description": "Deep dive into computer vision techniques.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1817,7 +1817,7 @@
     "title": "AI Ethics & Society",
     "description": "Learn AI ethics and societal impact.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1866,7 +1866,7 @@
     "title": "AI Project Deployment",
     "description": "Deploy AI models to production environments.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",
@@ -1915,7 +1915,7 @@
     "title": "AI Capstone Project",
     "description": "End-to-end AI project experience.",
     "category": "AI & Machine Learning",
-    "instructorId": [
+    "instructor": [
       {
         "id": "inst-10",
         "name": "Kevin Hart",

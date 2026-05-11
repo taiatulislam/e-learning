@@ -5,17 +5,7 @@ import CourseCard from "@/components/CourseCard";
 import { ICourse } from "@/type/courseType";
 import { useQuery } from "@tanstack/react-query";
 import { ICategory } from "@/type/categoryType";
-import { fetchCategories } from "@/utils/helpers";
-
-const fetchCourses = async () => {
-  const response = await fetch("/data/courses.json");
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch courses");
-  }
-
-  return response.json();
-};
+import { fetchCategories, fetchCourses } from "@/utils/helpers";
 
 export default function Page() {
   const [search, setSearch] = useState("");
@@ -43,9 +33,6 @@ export default function Page() {
 
     return matchCategory && matchSearch;
   });
-
-  console.log("courses", courses);
-  console.log("filtered", filtered);
 
   return (
     <div className="max-w-7xl mx-auto px-6 my-10 flex flex-col lg:flex-row gap-8">

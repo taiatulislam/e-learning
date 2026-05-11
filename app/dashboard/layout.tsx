@@ -37,12 +37,7 @@ export default function DashboardLayout({
       icon: LayoutDashboard,
     },
     {
-      label: "Order",
-      href: ["/dashboard/order"],
-      icon: ShoppingBag,
-    },
-    {
-      label: "Manage Course",
+      label: "Purchased Course",
       href: ["/dashboard/courses", "/dashboard/playlist/:id"],
       icon: BookOpen,
     },

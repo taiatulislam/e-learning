@@ -8,9 +8,10 @@ import { useState } from "react";
 
 type Props = {
   course: ICourse;
+  from?: string;
 };
 
-export default function CourseCard({ course }: Props) {
+export default function CourseCard({ course, from }: Props) {
   const [imgSrc, setImgSrc] = useState(course.thumbnailImage);
 
   return (
@@ -29,7 +30,7 @@ export default function CourseCard({ course }: Props) {
           />
 
           {/* Rating */}
-          <div className="absolute top-2 left-2 flex items-center gap-1 bg-white/90 rounded-full px-2 py-0.5 text-xs font-medium">
+          <div className="absolute top-2 left-2 flex items-center gap-1 bg-white/90 rounded-full px-2 py-0.5 text-xs font-medium text-black">
             <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
             {course.rating}
           </div>
@@ -47,7 +48,7 @@ export default function CourseCard({ course }: Props) {
         </div>
 
         {/* Content */}
-        <div className="p-3 pt-1 flex flex-col flex-1">
+        <div className="px-3 pt-1 pb-0 flex flex-col flex-1">
           <h3 className="text-base font-bold text-foreground mb-1 line-clamp-1">
             {course.title}
           </h3>
@@ -67,25 +68,27 @@ export default function CourseCard({ course }: Props) {
               <Clock className="w-3.5 h-3.5" /> {course.duration}
             </span>
           </div>
-          <div className="flex items-center gap-1 text-xs text-muted-foreground mb-4 border border-border bg-[#e8f0ff] px-2 py-1 rounded-xl w-fit">
+          <div className="flex items-center gap-1 text-xs text-muted-foreground border border-border bg-[#e8f0ff] px-2 py-1 rounded-xl w-fit">
             <Users className="w-3.5 h-3.5" />
             <span>{course.students} Students Enrolled</span>
           </div>
 
           {/* Footer */}
-          <div className="mt-auto flex items-center justify-between pt-3 border-t border-border">
-            <div>
-              <span className="text-lg font-extrabold text-foreground">
-                {course.price}
-              </span>
-              <span className="text-xs text-muted-foreground ml-1">
-                /lifetime
-              </span>
+          {from !== "dashboard" && (
+            <div className="flex items-center justify-between pt-3 border-t border-border mt-4">
+              <div>
+                <span className="text-lg font-extrabold text-foreground">
+                  {course.price}
+                </span>
+                <span className="text-xs text-muted-foreground ml-1">
+                  /lifetime
+                </span>
+              </div>
+              <button className="icon-gradient font-semibold text-xs px-3 py-1.5 rounded-full text-white transition-all shadow-lg">
+                Enroll Now
+              </button>
             </div>
-            <button className="icon-gradient font-semibold text-xs px-3 py-1.5 rounded-full text-white transition-all shadow-lg">
-              Enroll Now
-            </button>
-          </div>
+          )}
         </div>
       </div>
     </Link>
